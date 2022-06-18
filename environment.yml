@@ -1,4 +1,4 @@
-name: example-environment
+name: cr-data
 
 dependencies:
   - python=3.10
@@ -8,3 +8,7 @@ dependencies:
   - beautifulsoup4
   - requests
   - openpyxl
+  - pip:
+      - dbfread
+      - lxml
+      - simpledbf
