@@ -1,0 +1,37 @@
+---
+title: "eda_dotations"
+output: html_document
+date: '2022-06-18'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+dotace <- read.csv('raw_data/dotace.csv')
+```
+
+```{r}
+rozhodnuti <- read.csv('raw_data/rozhodnuti.csv')
+```
+
+```{r}
+location <- read.csv('raw_data/uzemnirealizace.csv')
+```
+
+```{r}
+rozhodnuti <- rozhodnuti %>% filter(rokRozhodnuti>=2007 & rokRozhodnuti<=2020)
+```
+
+```{r}
+prijemce <- read.csv('raw_data/prijemce.csv')
+```
+
+```{r}
+joined <- inner_join(dotace, location, by="iriDotace")
+```
