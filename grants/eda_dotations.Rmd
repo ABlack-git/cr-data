@@ -35,3 +35,8 @@ prijemce <- read.csv('raw_data/prijemce.csv')
 ```{r}
 joined <- inner_join(dotace, location, by="iriDotace")
 ```
+
+```{r}
+n_distinct(dotace$iriDotace)
+n_distinct(location$iriDotace)
+```

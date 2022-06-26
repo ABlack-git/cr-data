@@ -1,0 +1,30 @@
+---
+title: "data_prep"
+output: html_document
+date: '2022-06-26'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(statnipokladna)
+```
+
+```{r}
+cz_codes <- read.csv("../municipality_codes/cz-structure-enriched.csv", colClasses = c("ico"="character"))
+
+icos <- cz_codes$ico
+```
+
+```{r}
+budget <- sp_get_table("budget-local", seq(2010,2020), ico=icos)
+budget <- budget %>% mutate(vykaz_date=sprintf("%s-%s-31", vykaz_year, vykaz_month))
+```
+
+```{r}
+cats <- sp_get_codelist("polozka")
+budget_enriched <-budget %>% sp_add_codelist(cats) %>% sp_add_codelist("polozka")
+```

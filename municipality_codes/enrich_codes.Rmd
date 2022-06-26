@@ -1,0 +1,36 @@
+---
+title: "enrich_codes"
+output: html_document
+date: '2022-06-26'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(fuzzyjoin)
+library(stringr)
+```
+
+```{r}
+ico_codes <- read.csv("id-to-name.csv", colClasses = c("ID"="character"))
+cz_structure <- read.csv("cr-structure-codes.csv")
+
+ucjed <- read.csv("ucjed.csv", colClasses = c("IČO"="character", "Obec"="character"))
+ucjed[ucjed$Obec == "Nové na Moravě", ]$Obec <- "Nové Město na Moravě"
+ucjed[ucjed$Obec == "Brandýs nad Labem - Stará Boleslav", ]$Obec <- "Brandýs nad Labem-Stará Boleslav"
+ucjed[ucjed$Obec == "Nové nad Metují", ]$Obec <- "Nové Město nad Metují"
+```
+
+```{r}
+joined <- inner_join(cz_structure, ucjed, by=c("municipality"="Obec", "NUTS_3_id"="Kraj"))
+
+joined <- joined %>% filter(`IČO`!="00637271")
+```
+
+```{r}
+joined <- joined %>% select(c(colnames(cz_structure), "IČO", "Název")) %>% rename(ico=`IČO`, name=`Název`)
+```
+
+```{r}
+write.csv(joined, "cz-structure-enriched.csv")
+```

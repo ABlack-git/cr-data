@@ -9,7 +9,7 @@ years = (2006, 2010, 2013, 2017)
 base_url = "https://volby.cz/pls/ps{}/vysledky_okres?nuts={}"
 parties_base_path = "raw_data/party-register-{}/PSRKL.{}"
 
-cr_structure = pd.read_csv('cr-structure-codes.csv')
+cr_structure = pd.read_csv('../municipality_codes/cr-structure-codes.csv')
 district_ids = cr_structure['district_id'].unique()
 
 
