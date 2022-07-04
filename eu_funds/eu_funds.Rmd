@@ -1,0 +1,56 @@
+---
+title: "eu_funds"
+output: html_document
+date: '2022-07-04'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+funds_2013 <- read.csv('raw_data/EU_funds_2007_2013.csv')
+funds_2020 <- read.csv('raw_data/EU_funds_2014_2020.csv')
+
+```
+
+```{r}
+funds_2013$Datum.podpisu.smlouvy.rozhodnutí <- as.Date(funds_2013$Datum.podpisu.smlouvy.rozhodnutí)
+funds_2013 <- funds_2013 %>% mutate(year=format(Datum.podpisu.smlouvy.rozhodnutí, "%Y"))
+
+funds_2013_grouped <- funds_2013 %>% group_by(year, `IČ.žadatele`) %>% 
+  summarise(
+    Rozhodnutí.Smlouva.o.poskytnutí.dotace..celkové.zdroje. = sum(Rozhodnutí.Smlouva.o.poskytnutí.dotace..celkové.zdroje.), 
+    Rozhodnutí.Smlouva.o.poskytnutí.dotace..veřejné.prostředky.celkem. = sum(Rozhodnutí.Smlouva.o.poskytnutí.dotace..veřejné.prostředky.celkem.),
+    Rozhodnutí.Smlouva.o.poskytnutí.dotace..EU.zdroje. = sum(Rozhodnutí.Smlouva.o.poskytnutí.dotace..EU.zdroje.),
+    Proplacené.prostředky.příjemcům...vyúčtované..veřejné.prostředky.celkem. = sum(Proplacené.prostředky.příjemcům...vyúčtované..veřejné.prostředky.celkem.),
+    Proplacené.prostředky.příjemcům...vyúčtované..EU.zdroje. = sum(Proplacené.prostředky.příjemcům...vyúčtované..EU.zdroje.),
+    Certifikované.prostředky..veřejné.prostředky.celkem. = sum(Certifikované.prostředky..veřejné.prostředky.celkem.),
+    Certifikované.prostředky..EU.zdroje. = sum(Certifikované.prostředky..EU.zdroje.)
+  )
+
+write.csv(funds_2013_grouped, "funds_2013_grouped.csv")
+```
+
+
+```{r}
+
+funds_2020$...10 <- as.Date(funds_2020$...10)
+funds_2020 <- funds_2020 %>% mutate(year=format(...10, "%Y"))
+
+funds_2020_grouped <- funds_2020 %>% group_by(year, `Identification.number.of.the.beneficiary`) %>%
+  summarise(
+    Total.eligible.expenditure.allocated.to.the.selected.operation = sum(Total.eligible.expenditure.allocated.to.the.selected.operation),
+    Total.eligible.expenditures.charged.in.payment.applications = sum(Total.eligible.expenditures.charged.in.payment.applications),
+    Expeditures.allocated.to.the.selected.operation...Union.support = sum(Expeditures.allocated.to.the.selected.operation...Union.support),
+    Expeditures.allocated.to.the.selected.operation...national.public.funding = sum(Expeditures.allocated.to.the.selected.operation...national.public.funding),
+    Expeditures.allocated.to.the.selected.operation...national.private.funding = sum(Expeditures.allocated.to.the.selected.operation...national.private.funding),
+    Expenditures.charged.in.payment.application...Union.support = sum(Expenditures.charged.in.payment.application...Union.support)
+  )
+
+write.csv(funds_2020_grouped, "funds_2020_grouped.csv")
+```
