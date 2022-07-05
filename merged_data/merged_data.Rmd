@@ -1,0 +1,50 @@
+---
+title: "merge_data"
+output: html_document
+date: '2022-07-04'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+```{r}
+structure_codes <- read.csv('../municipality_codes/cz-structure-enriched.csv')
+population <- read.csv("raw_data/population_yearly.csv")
+funds_2013 <- read.csv("../eu_funds/funds_2013_grouped.csv")
+funds_2020 <- read.csv("../eu_funds/funds_2020_grouped.csv")
+
+structure_codes <- structure_codes[,!names(structure_codes) %in% c("X")]
+funds_2013 <- funds_2013[,!names(funds_2013) %in% c("X")]
+funds_2020 <- funds_2020[,!names(funds_2020) %in% c("X")]
+
+funds_2020 <- filter(funds_2020, year <= 2021)
+```
+
+```{r}
+population_lng <- population %>% pivot_longer(cols=starts_with("X"), names_to = "year", values_to="population", names_prefix = 'X')
+
+population_lng <- filter(population_lng, year >= 2008)
+population_lng$year <- as.integer(population_lng$year)
+```
+
+
+```{r}
+codes_population <- inner_join(structure_codes, population_lng, by=c("municipality_id", "municipality"))
+
+codes_pop_funds <- full_join(codes_population, funds_2013, by=c("ico"="IČ.žadatele", "year"))
+codes_pop_funds <- codes_pop_funds %>% mutate_at(c(13:length(codes_pop_funds)),~replace(., is.na(.), 0))
+
+codes_pop_funds_f <- full_join(codes_pop_funds, funds_2020, by=c("ico"="Identification.number.of.the.beneficiary", "year"))
+codes_pop_funds_f <- codes_pop_funds_f %>% mutate_at(c(20:length(codes_pop_funds_f)),~replace(., is.na(.), 0))
+```
+
+```{r}
+write.csv(codes_pop_funds_f, "data.csv", row.names = FALSE)
+```
+
