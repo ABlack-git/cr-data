@@ -45,6 +45,10 @@ codes_pop_funds_f <- codes_pop_funds_f %>% mutate_at(c(20:length(codes_pop_funds
 ```
 
 ```{r}
+
+```
+
+```{r}
 write.csv(codes_pop_funds_f, "data.csv", row.names = FALSE)
 ```
 
