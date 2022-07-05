@@ -11,13 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(dplyr)
 library(tidyr)
+library(statnipokladna)
 ```
 
 ```{r}
-structure_codes <- read.csv('../municipality_codes/cz-structure-enriched.csv')
+structure_codes <- read.csv('../municipality_codes/cz-structure-enriched.csv', colClasses = c("ico"="character"))
 population <- read.csv("raw_data/population_yearly.csv")
-funds_2013 <- read.csv("../eu_funds/funds_2013_grouped.csv")
-funds_2020 <- read.csv("../eu_funds/funds_2020_grouped.csv")
+funds_2013 <- read.csv("../eu_funds/funds_2013_grouped.csv", colClasses = c("IČ.žadatele"="character"))
+funds_2020 <- read.csv("../eu_funds/funds_2020_grouped.csv", colClasses = c("Identification.number.of.the.beneficiary"="character"))
 
 structure_codes <- structure_codes[,!names(structure_codes) %in% c("X")]
 funds_2013 <- funds_2013[,!names(funds_2013) %in% c("X")]
@@ -45,10 +46,22 @@ codes_pop_funds_f <- codes_pop_funds_f %>% mutate_at(c(20:length(codes_pop_funds
 ```
 
 ```{r}
+cz_codes <- read.csv("../municipality_codes/cz-structure-enriched.csv", colClasses = c("ico"="character"))
+icos <- cz_codes$ico
 
+budget <- sp_get_table("budget-local", seq(2010,2021), ico=icos)
+budget <- budget %>% mutate(vykaz_date=sprintf("%s-%s-31", vykaz_year, vykaz_month))
+
+cats <- sp_get_codelist("polozka")
+budget_enriched <-budget %>% sp_add_codelist(cats) %>% sp_add_codelist("polozka") %>% filter(trida != "Přijaté transfery") %>% filter(druh != "Výdaje")
+
+budget_revenue <- budget_enriched %>% group_by(vykaz_year, ico) %>% summarise(revenue = sum(budget_spending))
+budget_revenue$vykaz_year <- as.integer(budget_revenue$vykaz_year)
+
+data <- full_join(codes_pop_funds_f, budget_revenue, by=c("year"="vykaz_year", "ico"))
 ```
 
 ```{r}
-write.csv(codes_pop_funds_f, "data.csv", row.names = FALSE)
+write.csv(data, "data.csv", row.names = FALSE)
 ```
 
