@@ -1,0 +1,101 @@
+[
+  {
+    "name": "First government of Mirek Topolánek",
+    "PM": "Mirek Topolánek",
+    "appointment": "04-09-2006",
+    "vote_of_confidence": {
+      "granted": "NO",
+      "date": "03-10-2006"
+    },
+    "resignation": "11-10-2006",
+    "end_of_government": "09-01-2007",
+    "coalition": ["ODS"]
+  },
+  {
+    "name": "Second government of Mirek Topolánek",
+    "PM": "Mirek Topolánek",
+    "appointment": "09-01-2007",
+    "vote_of_confidence": {
+      "granted": "YES",
+      "date": "19-01-2007"
+    },
+    "vote_of_no_confidence": "24-03-2009",
+    "resignation": "24-03-2009",
+    "end_of_government": "08-05-2009",
+    "coalition": ["ODS", "KDU-ČSL", "SZ"]
+  },
+  {
+    "name": "Government of Jan Fischer",
+    "PM": "Jan Fischer",
+    "appointment": "08-05-2009",
+    "vote_of_confidence": {
+      "granted": "YES",
+      "date": "07-06-2009"
+    },
+    "resignation": "25-06-2010",
+    "end_of_government": "13-07-2010",
+    "coalition": ["ODS", "SZ", "ČSSD"]
+  },
+  {
+    "name": "Government of Petr Nečas",
+    "PM": "Petr Nečas",
+    "appointment": "13-07-2010",
+    "vote_of_confidence": {
+      "granted": "YES",
+      "date": "10-08-2010"
+    },
+    "resignation": "17-06-2013",
+    "end_of_government": "10-07-2013",
+    "coalition": ["ODS", "TOP 09", "VV"]
+  },
+  {
+    "name": "Government of Jiří Rusnok",
+    "PM": "Jiří Rusnok",
+    "appointment": "10-06-2013",
+    "vote_of_confidence": {
+      "granted": "NO",
+      "date": "07-08-2013"
+    },
+    "resignation": "13-08-2013",
+    "end_of_government": "29-01-2014",
+    "coalition": [],
+    "affiliated": ["ČSSD", "KSČM"]
+  },
+  {
+    "name": "Government of Bohuslav Sobotka",
+    "PM": "Bohuslav Sobotka",
+    "appointment": "29-01-2014",
+    "vote_of_confidence": {
+      "granted": "YES",
+      "date": "18-02-2014"
+    },
+    "resignation": "05-12-2017",
+    "end_of_government": "13-12-2017",
+    "coalition": ["ČSSD", "ANO 2011", "KDU-ČSL"]
+  },
+  {
+    "name": "First government of Andrej Babiš",
+    "PM": "Andrej Babiš",
+    "appointment": "13-12-2017",
+    "vote_of_confidence": {
+      "granted": "NO",
+      "date": "16-01-2018"
+    },
+    "resignation": "24-01-2018",
+    "end_of_government": "27-06-2018",
+    "coalition": ["ANO"]
+  },
+  {
+    "name": "Second government of Andrej Babiš",
+    "PM": "Andrej Babiš",
+    "appointment": "27-07-2018",
+    "vote_of_confidence": {
+      "granted": "YES",
+      "date": "12-07-2018"
+    },
+    "resignation": "11-11-2021",
+    "end_of_government": "17-12-2021",
+    "coalition": ["ANO", "ČSSD"],
+    "affiliated": ["KSČM"]
+  }
+]

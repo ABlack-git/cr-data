@@ -13,9 +13,8 @@ library(dplyr)
 ```
 
 ```{r}
-funds_2013 <- read.csv('raw_data/EU_funds_2007_2013.csv')
-funds_2020 <- read.csv('raw_data/EU_funds_2014_2020.csv')
-
+funds_2013 <- read.csv('raw_data/EU_funds_2007_2013.csv',  colClasses = c("IČ.žadatele"="character"))
+funds_2020 <- read.csv('raw_data/EU_funds_2014_2020.csv', colClasses = c("Identification.number.of.the.beneficiary"="character"))
 ```
 
 ```{r}
