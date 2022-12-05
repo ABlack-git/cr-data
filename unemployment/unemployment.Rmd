@@ -1,0 +1,31 @@
+---
+title: "unemployment"
+output: html_document
+date: "2022-12-04"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+Add data for 2012 and 2013
+```{r}
+library(readxl)
+unemployment <- read_excel("~/Desktop/cr-data/unemployment/raw_data/Unemployment.xlsx")
+unemployment$diff <- (unemployment$`2014` - unemployment$`2011`)/3
+unemployment$`2012` <- round(unemployment$`2011`+ unemployment$diff,2)
+unemployment$`2013` <- round(unemployment$`2012` + unemployment$diff,2)
+unemployment <- unemployment[,-16]
+unemployment <- unemployment[,c(1,2,15,14,13,12,11,10,16,17,9,8,7,6,5,4,3)]
+```
+Wide to long
+```{r}
+library(tidyr)
+unemployment_long <- gather(unemployment, year, unemployment, `2006`:`2020`, factor_key = T )
+unemployment_long <- unemployment_long[order(unemployment_long$municipality_id, unemployment_long$year), ]
+```
+Save data
+```{r}
+write.csv(unemployment_long, "~/Desktop/cr-data/unemployment/raw_data/Unemployment_long.csv", row.names=FALSE)
+
+```
+

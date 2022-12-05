@@ -1,0 +1,44 @@
+---
+title: "elction"
+output: html_document
+date: "2022-12-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(dplyr)
+elections <- read_csv("~/Desktop/cr-data/elections/elections.csv")
+```
+
+
+```{r}
+elections <- elections[order(elections$year, elections$municipality_id, elections$vote_percentage), ]
+str(elections)
+summary(elections)
+a<-distinct(elections,municipality_name)
+elections_major <- elections %>% group_by(municipality_id, year)%>% filter(vote_percentage == max(vote_percentage))
+elections_with_dummy <- elections_major %>% mutate(winer = case_when (year == '2006'& party_name_short =='ODS' ~1,
+                                                                      year == '2010'& party_name_short =='ČSSD' ~1,
+                                                                      year == '2013'& party_name_short =='ČSSD' ~1,
+                                                                      year == '2017'& party_name_short =='ANO' ~1,
+                                                                      TRUE ~ 0)) %>% mutate(coallition = case_when(year=='2006'&(party_name_short=='ODS'|party_name_short== 'KDU-ČSL'|party_name_short == 'SZ')~1,
+   year == '2010'& (party_name_short =='ODS'|party_name_short == 'TOP 09'|party_name_short == 'VV')~1,
+   year == '2013'& (party_name_short =='ČSSD'|party_name_short == 'ANO 2011'|party_name_short == 'KDU-ČSL')~1,
+   year == '2017'& (party_name_short =='ANO'|party_name_short =='ČSSD')~1,
+   TRUE ~ 0))%>%ungroup()                                     
+distinct_munic_2006<- elections_with_dummy%>%filter(year == '2006')%>% distinct( municipality_name)
+distinct_munic_2010<- elections_with_dummy%>%filter(year == '2010')%>% distinct( municipality_name)
+distinct_munic_2013<- elections_with_dummy%>%filter(year == '2013')%>% distinct( municipality_name)
+distinct_munic_2017<- elections_with_dummy%>%filter(year == '2017')%>% distinct( municipality_name)
+```
+Save file
+
+```{r}
+write.csv(elections_with_dummy,"~/Desktop/cr-data/elections/election_with_dummy.csv", row.names=FALSE)
+```
+
+
