@@ -1,0 +1,39 @@
+---
+title: "eu_funds_all"
+output: html_document
+date: "2022-12-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Grant amount paid_total
+Grant amount paid_EU
+
+```{r}
+library(readr)
+library(dplyr)
+funds_2013_grouped <- read_csv("Desktop/cr-data/eu_funds/funds_2013_grouped.csv")
+funds_2020_grouped <- read_csv("Desktop/cr-data/eu_funds/funds_2020_grouped.csv")
+
+funds_2013_edited <- funds_2013_grouped[,-c(1,4,5,6,9,10)]%>%rename("ID_municipality"="IČ.žadatele",
+ "Grant_amount_total_CZK"="Proplacené.prostředky.příjemcům...vyúčtované..veřejné.prostředky.celkem.",
+ "Grant_amount_EU_CZK"="Proplacené.prostředky.příjemcům...vyúčtované..EU.zdroje.")
+
+funds_2020_edited <- funds_2020_grouped[,-c(1,4,6,7,8)]%>%rename("ID_municipality"="Identification.number.of.the.beneficiary", 
+ "Grant_amount_total_CZK" = "Total.eligible.expenditures.charged.in.payment.applications",
+"Grant_amount_EU_CZK"= "Expenditures.charged.in.payment.application...Union.support")
+
+```
+
+```{r}
+
+summary(funds_2013_edited)
+summary(funds_2020_edited)
+```
+
+```{r}
+write.csv(funds_2013_edited,"~/Desktop/cr-data/eu_funds/funds_2013_edited.csv", row.names=FALSE)
+write.csv(funds_2020_edited,"~/Desktop/cr-data/eu_funds/funds_2020_edited.csv", row.names=FALSE)
+```

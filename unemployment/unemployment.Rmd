@@ -25,7 +25,7 @@ unemployment_long <- unemployment_long[order(unemployment_long$municipality_id, 
 ```
 Save data
 ```{r}
-write.csv(unemployment_long, "~/Desktop/cr-data/unemployment/raw_data/Unemployment_long.csv", row.names=FALSE)
+write.csv(unemployment_long, "~/Desktop/cr-data/unemployment/Unemployment_long.csv", row.names=FALSE)
 
 ```
 
