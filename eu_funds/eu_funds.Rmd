@@ -20,7 +20,7 @@ funds_2020 <- read.csv('raw_data/EU_funds_2014_2020.csv', colClasses = c("Identi
 ```{r}
 funds_2013$Datum.podpisu.smlouvy.rozhodnutí <- as.Date(funds_2013$Datum.podpisu.smlouvy.rozhodnutí)
 funds_2013 <- funds_2013 %>% mutate(year=format(Datum.podpisu.smlouvy.rozhodnutí, "%Y"))
-
+funds_2013 <- na.omit(funds_2013)
 funds_2013_grouped <- funds_2013 %>% group_by(year, `IČ.žadatele`) %>% 
   summarise(
     Rozhodnutí.Smlouva.o.poskytnutí.dotace..celkové.zdroje. = sum(Rozhodnutí.Smlouva.o.poskytnutí.dotace..celkové.zdroje.), 

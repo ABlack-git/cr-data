@@ -1,0 +1,37 @@
+---
+title: "eu_funds_2013_2020"
+output: html_document
+date: "2022-12-05"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(dplyr)
+funds_2013_edited <- read_csv("Desktop/cr-data/eu_funds/funds_2013_edited.csv")
+funds_2020_edited<- read_csv("Desktop/cr-data/eu_funds/funds_2020_edited.csv")
+```
+
+```{r}
+funds_2013_2020 <- rbind(funds_2013_edited, funds_2020_edited)
+funds_2013_2020_sum<- funds_2013_2020 %>% group_by(year, ID_municipality) %>% 
+  summarise(
+   Grant_amount_total_CZK = sum(Grant_amount_total_CZK), 
+    Grant_amount_EU_CZK = sum(Grant_amount_EU_CZK)
+  )
+funds_2013_2020_sum <- funds_2013_2020_sum %>% filter(year<2021) %>% rename("ico"="ID_municipality")
+```
+
+```{r}
+cz_structure_enriched <- read_csv("Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
+cz_ico_id <- cz_structure_enriched[,c("ico","municipality_id","municipality")]
+funds_merged <- left_join(funds_2013_2020_sum, cz_ico_id, by="ico") %>% ungroup()
+```
+
+```{r}
+write.csv(funds_merged,"~/Desktop/cr-data/eu_funds/funds_merged.csv", row.names=FALSE)
+```
+
