@@ -225,25 +225,25 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,8101,Bílovec,6.79,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,8101,Bílovec,0.49,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,8101,Bílovec,0.05,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,8105,Frenštát p.Radhoštěm,0.45,137,Strana zdravého rozumu,SZR
-2006,8105,Frenštát p.Radhoštěm,0.09,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,8105,Frenštát p.Radhoštěm,0.63,88,NEZÁVISLÍ,NEZ
-2006,8105,Frenštát p.Radhoštěm,0.09,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,8105,Frenštát p.Radhoštěm,36.75,53,Občanská demokratická strana,ODS
-2006,8105,Frenštát p.Radhoštěm,32.63,7,Česká strana sociálně demokratická,ČSSD
-2006,8105,Frenštát p.Radhoštěm,3.19,129,SNK Evropští demokraté,SNK ED
-2006,8105,Frenštát p.Radhoštěm,0.39,102,Unie svobody - Demokratická unie,US-DEU
-2006,8105,Frenštát p.Radhoštěm,0.1,151,Helax-Ostrava se baví,HOB
-2006,8105,Frenštát p.Radhoštěm,0.36,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,8105,Frenštát p.Radhoštěm,0.07,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,8105,Frenštát p.Radhoštěm,0.34,83,Moravané,M
-2006,8105,Frenštát p.Radhoštěm,5.52,5,Strana zelených,SZ
-2006,8105,Frenštát p.Radhoštěm,11.22,47,Komunistická strana Čech a Moravy,KSČM
-2006,8105,Frenštát p.Radhoštěm,0.27,338,Koalice pro Českou republiku,Koal_ČR
-2006,8105,Frenštát p.Radhoštěm,0.07,152,Národní strana,NS
-2006,8105,Frenštát p.Radhoštěm,6.97,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,8105,Frenštát p.Radhoštěm,0.65,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,8105,Frenštát p.Radhoštěm,0.12,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,8105,Frenštát pod Radhoštěm,0.45,137,Strana zdravého rozumu,SZR
+2006,8105,Frenštát pod Radhoštěm,0.09,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,8105,Frenštát pod Radhoštěm,0.63,88,NEZÁVISLÍ,NEZ
+2006,8105,Frenštát pod Radhoštěm,0.09,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,8105,Frenštát pod Radhoštěm,36.75,53,Občanská demokratická strana,ODS
+2006,8105,Frenštát pod Radhoštěm,32.63,7,Česká strana sociálně demokratická,ČSSD
+2006,8105,Frenštát pod Radhoštěm,3.19,129,SNK Evropští demokraté,SNK ED
+2006,8105,Frenštát pod Radhoštěm,0.39,102,Unie svobody - Demokratická unie,US-DEU
+2006,8105,Frenštát pod Radhoštěm,0.1,151,Helax-Ostrava se baví,HOB
+2006,8105,Frenštát pod Radhoštěm,0.36,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,8105,Frenštát pod Radhoštěm,0.07,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,8105,Frenštát pod Radhoštěm,0.34,83,Moravané,M
+2006,8105,Frenštát pod Radhoštěm,5.52,5,Strana zelených,SZ
+2006,8105,Frenštát pod Radhoštěm,11.22,47,Komunistická strana Čech a Moravy,KSČM
+2006,8105,Frenštát pod Radhoštěm,0.27,338,Koalice pro Českou republiku,Koal_ČR
+2006,8105,Frenštát pod Radhoštěm,0.07,152,Národní strana,NS
+2006,8105,Frenštát pod Radhoštěm,6.97,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,8105,Frenštát pod Radhoštěm,0.65,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,8105,Frenštát pod Radhoštěm,0.12,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,8112,Kopřivnice,0.45,137,Strana zdravého rozumu,SZR
 2006,8112,Kopřivnice,0.06,140,Balbínova poetická strana,BPS
 2006,8112,Kopřivnice,0.13,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -556,24 +556,24 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,8118,Orlová,2.57,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,8118,Orlová,0.85,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,8118,Orlová,0.16,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,2103,Brandýs n.L.-St.Bol.,0.43,137,Strana zdravého rozumu,SZR
-2006,2103,Brandýs n.L.-St.Bol.,0.21,140,Balbínova poetická strana,BPS
-2006,2103,Brandýs n.L.-St.Bol.,0.2,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,2103,Brandýs n.L.-St.Bol.,0.39,88,NEZÁVISLÍ,NEZ
-2006,2103,Brandýs n.L.-St.Bol.,0.17,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,2103,Brandýs n.L.-St.Bol.,46.05,53,Občanská demokratická strana,ODS
-2006,2103,Brandýs n.L.-St.Bol.,25.2,7,Česká strana sociálně demokratická,ČSSD
-2006,2103,Brandýs n.L.-St.Bol.,4.39,129,SNK Evropští demokraté,SNK ED
-2006,2103,Brandýs n.L.-St.Bol.,0.45,102,Unie svobody - Demokratická unie,US-DEU
-2006,2103,Brandýs n.L.-St.Bol.,0.33,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,2103,Brandýs n.L.-St.Bol.,0.01,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,2103,Brandýs n.L.-St.Bol.,6.3,5,Strana zelených,SZ
-2006,2103,Brandýs n.L.-St.Bol.,10.37,47,Komunistická strana Čech a Moravy,KSČM
-2006,2103,Brandýs n.L.-St.Bol.,0.1,338,Koalice pro Českou republiku,Koal_ČR
-2006,2103,Brandýs n.L.-St.Bol.,0.21,152,Národní strana,NS
-2006,2103,Brandýs n.L.-St.Bol.,4.29,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,2103,Brandýs n.L.-St.Bol.,0.61,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,2103,Brandýs n.L.-St.Bol.,0.2,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.43,137,Strana zdravého rozumu,SZR
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.21,140,Balbínova poetická strana,BPS
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.2,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.39,88,NEZÁVISLÍ,NEZ
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.17,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,2103,Brandýs nad Labem-Stará Boleslav,46.05,53,Občanská demokratická strana,ODS
+2006,2103,Brandýs nad Labem-Stará Boleslav,25.2,7,Česká strana sociálně demokratická,ČSSD
+2006,2103,Brandýs nad Labem-Stará Boleslav,4.39,129,SNK Evropští demokraté,SNK ED
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.45,102,Unie svobody - Demokratická unie,US-DEU
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.33,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.01,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,2103,Brandýs nad Labem-Stará Boleslav,6.3,5,Strana zelených,SZ
+2006,2103,Brandýs nad Labem-Stará Boleslav,10.37,47,Komunistická strana Čech a Moravy,KSČM
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.1,338,Koalice pro Českou republiku,Koal_ČR
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.21,152,Národní strana,NS
+2006,2103,Brandýs nad Labem-Stará Boleslav,4.29,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.61,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,2103,Brandýs nad Labem-Stará Boleslav,0.2,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,2122,Říčany,0.3,137,Strana zdravého rozumu,SZR
 2006,2122,Říčany,0.27,140,Balbínova poetická strana,BPS
 2006,2122,Říčany,0.22,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -752,24 +752,24 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,5206,Jaroměř,4.76,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,5206,Jaroměř,0.47,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,5206,Jaroměř,0.33,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,5211,Nové Město n.Metují,0.38,137,Strana zdravého rozumu,SZR
-2006,5211,Nové Město n.Metují,0.07,140,Balbínova poetická strana,BPS
-2006,5211,Nové Město n.Metují,0.08,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,5211,Nové Město n.Metují,0.54,88,NEZÁVISLÍ,NEZ
-2006,5211,Nové Město n.Metují,0.17,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,5211,Nové Město n.Metují,40.01,53,Občanská demokratická strana,ODS
-2006,5211,Nové Město n.Metují,27.65,7,Česká strana sociálně demokratická,ČSSD
-2006,5211,Nové Město n.Metují,3.92,129,SNK Evropští demokraté,SNK ED
-2006,5211,Nové Město n.Metují,0.59,102,Unie svobody - Demokratická unie,US-DEU
-2006,5211,Nové Město n.Metují,0.47,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,5211,Nové Město n.Metují,0.07,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,5211,Nové Město n.Metují,6.97,5,Strana zelených,SZ
-2006,5211,Nové Město n.Metují,8.76,47,Komunistická strana Čech a Moravy,KSČM
-2006,5211,Nové Město n.Metují,0.17,338,Koalice pro Českou republiku,Koal_ČR
-2006,5211,Nové Město n.Metují,0.33,152,Národní strana,NS
-2006,5211,Nové Město n.Metují,8.99,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,5211,Nové Město n.Metují,0.56,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,5211,Nové Město n.Metují,0.19,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,5211,Nové Město nad Metují,0.38,137,Strana zdravého rozumu,SZR
+2006,5211,Nové Město nad Metují,0.07,140,Balbínova poetická strana,BPS
+2006,5211,Nové Město nad Metují,0.08,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,5211,Nové Město nad Metují,0.54,88,NEZÁVISLÍ,NEZ
+2006,5211,Nové Město nad Metují,0.17,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,5211,Nové Město nad Metují,40.01,53,Občanská demokratická strana,ODS
+2006,5211,Nové Město nad Metují,27.65,7,Česká strana sociálně demokratická,ČSSD
+2006,5211,Nové Město nad Metují,3.92,129,SNK Evropští demokraté,SNK ED
+2006,5211,Nové Město nad Metují,0.59,102,Unie svobody - Demokratická unie,US-DEU
+2006,5211,Nové Město nad Metují,0.47,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,5211,Nové Město nad Metují,0.07,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,5211,Nové Město nad Metují,6.97,5,Strana zelených,SZ
+2006,5211,Nové Město nad Metují,8.76,47,Komunistická strana Čech a Moravy,KSČM
+2006,5211,Nové Město nad Metují,0.17,338,Koalice pro Českou republiku,Koal_ČR
+2006,5211,Nové Město nad Metují,0.33,152,Národní strana,NS
+2006,5211,Nové Město nad Metují,8.99,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,5211,Nové Město nad Metují,0.56,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,5211,Nové Město nad Metují,0.19,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,8103,Bruntál,1.72,137,Strana zdravého rozumu,SZR
 2006,8103,Bruntál,0.09,140,Balbínova poetická strana,BPS
 2006,8103,Bruntál,0.07,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -912,25 +912,25 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,6115,Žďár nad Sázavou,9.31,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,6115,Žďár nad Sázavou,0.19,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,6115,Žďár nad Sázavou,0.11,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,6101,Bystřice nad Pernšt.,0.6,137,Strana zdravého rozumu,SZR
-2006,6101,Bystřice nad Pernšt.,0.04,140,Balbínova poetická strana,BPS
-2006,6101,Bystřice nad Pernšt.,0.26,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,6101,Bystřice nad Pernšt.,0.3,88,NEZÁVISLÍ,NEZ
-2006,6101,Bystřice nad Pernšt.,0.13,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,6101,Bystřice nad Pernšt.,19.64,53,Občanská demokratická strana,ODS
-2006,6101,Bystřice nad Pernšt.,48.05,7,Česká strana sociálně demokratická,ČSSD
-2006,6101,Bystřice nad Pernšt.,2.56,129,SNK Evropští demokraté,SNK ED
-2006,6101,Bystřice nad Pernšt.,0.13,102,Unie svobody - Demokratická unie,US-DEU
-2006,6101,Bystřice nad Pernšt.,0.41,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,6101,Bystřice nad Pernšt.,0.02,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,6101,Bystřice nad Pernšt.,0.26,83,Moravané,M
-2006,6101,Bystřice nad Pernšt.,3.58,5,Strana zelených,SZ
-2006,6101,Bystřice nad Pernšt.,12.42,47,Komunistická strana Čech a Moravy,KSČM
-2006,6101,Bystřice nad Pernšt.,0.04,338,Koalice pro Českou republiku,Koal_ČR
-2006,6101,Bystřice nad Pernšt.,0.04,152,Národní strana,NS
-2006,6101,Bystřice nad Pernšt.,11.02,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,6101,Bystřice nad Pernšt.,0.32,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,6101,Bystřice nad Pernšt.,0.1,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,6101,Bystřice nad Pernštejnem,0.6,137,Strana zdravého rozumu,SZR
+2006,6101,Bystřice nad Pernštejnem,0.04,140,Balbínova poetická strana,BPS
+2006,6101,Bystřice nad Pernštejnem,0.26,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,6101,Bystřice nad Pernštejnem,0.3,88,NEZÁVISLÍ,NEZ
+2006,6101,Bystřice nad Pernštejnem,0.13,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,6101,Bystřice nad Pernštejnem,19.64,53,Občanská demokratická strana,ODS
+2006,6101,Bystřice nad Pernštejnem,48.05,7,Česká strana sociálně demokratická,ČSSD
+2006,6101,Bystřice nad Pernštejnem,2.56,129,SNK Evropští demokraté,SNK ED
+2006,6101,Bystřice nad Pernštejnem,0.13,102,Unie svobody - Demokratická unie,US-DEU
+2006,6101,Bystřice nad Pernštejnem,0.41,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,6101,Bystřice nad Pernštejnem,0.02,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,6101,Bystřice nad Pernštejnem,0.26,83,Moravané,M
+2006,6101,Bystřice nad Pernštejnem,3.58,5,Strana zelených,SZ
+2006,6101,Bystřice nad Pernštejnem,12.42,47,Komunistická strana Čech a Moravy,KSČM
+2006,6101,Bystřice nad Pernštejnem,0.04,338,Koalice pro Českou republiku,Koal_ČR
+2006,6101,Bystřice nad Pernštejnem,0.04,152,Národní strana,NS
+2006,6101,Bystřice nad Pernštejnem,11.02,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,6101,Bystřice nad Pernštejnem,0.32,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,6101,Bystřice nad Pernštejnem,0.1,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,6108,Nové Město na Moravě,0.37,137,Strana zdravého rozumu,SZR
 2006,6108,Nové Město na Moravě,0.05,140,Balbínova poetická strana,BPS
 2006,6108,Nové Město na Moravě,0.14,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -989,24 +989,24 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,7203,Kroměříž,9.61,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,7203,Kroměříž,0.34,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,7203,Kroměříž,0.11,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,7201,Bystřice p.Hostýnem,0.53,137,Strana zdravého rozumu,SZR
-2006,7201,Bystřice p.Hostýnem,0.25,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,7201,Bystřice p.Hostýnem,0.69,88,NEZÁVISLÍ,NEZ
-2006,7201,Bystřice p.Hostýnem,0.04,77,Česká pravice,ČP
-2006,7201,Bystřice p.Hostýnem,0.12,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,7201,Bystřice p.Hostýnem,33.22,53,Občanská demokratická strana,ODS
-2006,7201,Bystřice p.Hostýnem,35.26,7,Česká strana sociálně demokratická,ČSSD
-2006,7201,Bystřice p.Hostýnem,1.29,129,SNK Evropští demokraté,SNK ED
-2006,7201,Bystřice p.Hostýnem,0.44,102,Unie svobody - Demokratická unie,US-DEU
-2006,7201,Bystřice p.Hostýnem,0.16,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,7201,Bystřice p.Hostýnem,0.63,83,Moravané,M
-2006,7201,Bystřice p.Hostýnem,5.49,5,Strana zelených,SZ
-2006,7201,Bystřice p.Hostýnem,11.51,47,Komunistická strana Čech a Moravy,KSČM
-2006,7201,Bystřice p.Hostýnem,0.02,338,Koalice pro Českou republiku,Koal_ČR
-2006,7201,Bystřice p.Hostýnem,0.06,152,Národní strana,NS
-2006,7201,Bystřice p.Hostýnem,9.66,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,7201,Bystřice p.Hostýnem,0.5,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,7201,Bystřice p.Hostýnem,0.04,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,7201,Bystřice pod Hostýnem,0.53,137,Strana zdravého rozumu,SZR
+2006,7201,Bystřice pod Hostýnem,0.25,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,7201,Bystřice pod Hostýnem,0.69,88,NEZÁVISLÍ,NEZ
+2006,7201,Bystřice pod Hostýnem,0.04,77,Česká pravice,ČP
+2006,7201,Bystřice pod Hostýnem,0.12,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,7201,Bystřice pod Hostýnem,33.22,53,Občanská demokratická strana,ODS
+2006,7201,Bystřice pod Hostýnem,35.26,7,Česká strana sociálně demokratická,ČSSD
+2006,7201,Bystřice pod Hostýnem,1.29,129,SNK Evropští demokraté,SNK ED
+2006,7201,Bystřice pod Hostýnem,0.44,102,Unie svobody - Demokratická unie,US-DEU
+2006,7201,Bystřice pod Hostýnem,0.16,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,7201,Bystřice pod Hostýnem,0.63,83,Moravané,M
+2006,7201,Bystřice pod Hostýnem,5.49,5,Strana zelených,SZ
+2006,7201,Bystřice pod Hostýnem,11.51,47,Komunistická strana Čech a Moravy,KSČM
+2006,7201,Bystřice pod Hostýnem,0.02,338,Koalice pro Českou republiku,Koal_ČR
+2006,7201,Bystřice pod Hostýnem,0.06,152,Národní strana,NS
+2006,7201,Bystřice pod Hostýnem,9.66,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,7201,Bystřice pod Hostýnem,0.5,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,7201,Bystřice pod Hostýnem,0.04,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,7202,Holešov,0.22,137,Strana zdravého rozumu,SZR
 2006,7202,Holešov,0.13,140,Balbínova poetická strana,BPS
 2006,7202,Holešov,0.24,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -1778,24 +1778,24 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,5214,Trutnov,3.37,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,5214,Trutnov,0.62,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,5214,Trutnov,0.2,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,5203,Dvůr Králové n.Labem,0.92,137,Strana zdravého rozumu,SZR
-2006,5203,Dvůr Králové n.Labem,0.14,140,Balbínova poetická strana,BPS
-2006,5203,Dvůr Králové n.Labem,0.07,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,5203,Dvůr Králové n.Labem,0.38,88,NEZÁVISLÍ,NEZ
-2006,5203,Dvůr Králové n.Labem,0.29,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,5203,Dvůr Králové n.Labem,41.49,53,Občanská demokratická strana,ODS
-2006,5203,Dvůr Králové n.Labem,30.21,7,Česká strana sociálně demokratická,ČSSD
-2006,5203,Dvůr Králové n.Labem,3.04,129,SNK Evropští demokraté,SNK ED
-2006,5203,Dvůr Králové n.Labem,0.29,102,Unie svobody - Demokratická unie,US-DEU
-2006,5203,Dvůr Králové n.Labem,0.55,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,5203,Dvůr Králové n.Labem,0.13,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,5203,Dvůr Králové n.Labem,7.1,5,Strana zelených,SZ
-2006,5203,Dvůr Králové n.Labem,9.91,47,Komunistická strana Čech a Moravy,KSČM
-2006,5203,Dvůr Králové n.Labem,0.14,338,Koalice pro Českou republiku,Koal_ČR
-2006,5203,Dvůr Králové n.Labem,0.2,152,Národní strana,NS
-2006,5203,Dvůr Králové n.Labem,4.25,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,5203,Dvůr Králové n.Labem,0.65,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,5203,Dvůr Králové n.Labem,0.18,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,5203,Dvůr Králové nad Labem,0.92,137,Strana zdravého rozumu,SZR
+2006,5203,Dvůr Králové nad Labem,0.14,140,Balbínova poetická strana,BPS
+2006,5203,Dvůr Králové nad Labem,0.07,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,5203,Dvůr Králové nad Labem,0.38,88,NEZÁVISLÍ,NEZ
+2006,5203,Dvůr Králové nad Labem,0.29,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,5203,Dvůr Králové nad Labem,41.49,53,Občanská demokratická strana,ODS
+2006,5203,Dvůr Králové nad Labem,30.21,7,Česká strana sociálně demokratická,ČSSD
+2006,5203,Dvůr Králové nad Labem,3.04,129,SNK Evropští demokraté,SNK ED
+2006,5203,Dvůr Králové nad Labem,0.29,102,Unie svobody - Demokratická unie,US-DEU
+2006,5203,Dvůr Králové nad Labem,0.55,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,5203,Dvůr Králové nad Labem,0.13,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,5203,Dvůr Králové nad Labem,7.1,5,Strana zelených,SZ
+2006,5203,Dvůr Králové nad Labem,9.91,47,Komunistická strana Čech a Moravy,KSČM
+2006,5203,Dvůr Králové nad Labem,0.14,338,Koalice pro Českou republiku,Koal_ČR
+2006,5203,Dvůr Králové nad Labem,0.2,152,Národní strana,NS
+2006,5203,Dvůr Králové nad Labem,4.25,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,5203,Dvůr Králové nad Labem,0.65,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,5203,Dvůr Králové nad Labem,0.18,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,5215,Vrchlabí,0.6,137,Strana zdravého rozumu,SZR
 2006,5215,Vrchlabí,0.05,140,Balbínova poetická strana,BPS
 2006,5215,Vrchlabí,0.16,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
@@ -1835,26 +1835,26 @@ year,municipality_id,municipality_name,vote_percentage,party_id,party_name,party
 2006,8106,Frýdek-Místek,6.95,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
 2006,8106,Frýdek-Místek,0.67,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
 2006,8106,Frýdek-Místek,0.12,171,STRANA ROVNOST ŠANCÍ,SRŠ
-2006,8107,Frýdlant n.Ostravicí,0.65,137,Strana zdravého rozumu,SZR
-2006,8107,Frýdlant n.Ostravicí,0.09,140,Balbínova poetická strana,BPS
-2006,8107,Frýdlant n.Ostravicí,0.12,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
-2006,8107,Frýdlant n.Ostravicí,0.82,88,NEZÁVISLÍ,NEZ
-2006,8107,Frýdlant n.Ostravicí,0.05,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
-2006,8107,Frýdlant n.Ostravicí,29.83,53,Občanská demokratická strana,ODS
-2006,8107,Frýdlant n.Ostravicí,38.29,7,Česká strana sociálně demokratická,ČSSD
-2006,8107,Frýdlant n.Ostravicí,2.12,129,SNK Evropští demokraté,SNK ED
-2006,8107,Frýdlant n.Ostravicí,0.12,102,Unie svobody - Demokratická unie,US-DEU
-2006,8107,Frýdlant n.Ostravicí,0.21,151,Helax-Ostrava se baví,HOB
-2006,8107,Frýdlant n.Ostravicí,0.29,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
-2006,8107,Frýdlant n.Ostravicí,0.05,178,4 VIZE-www.4vize.cz,4 VIZE
-2006,8107,Frýdlant n.Ostravicí,0.2,83,Moravané,M
-2006,8107,Frýdlant n.Ostravicí,4.3,5,Strana zelených,SZ
-2006,8107,Frýdlant n.Ostravicí,11.73,47,Komunistická strana Čech a Moravy,KSČM
-2006,8107,Frýdlant n.Ostravicí,0.05,338,Koalice pro Českou republiku,Koal_ČR
-2006,8107,Frýdlant n.Ostravicí,0.1,152,Národní strana,NS
-2006,8107,Frýdlant n.Ostravicí,10.01,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
-2006,8107,Frýdlant n.Ostravicí,0.69,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
-2006,8107,Frýdlant n.Ostravicí,0.18,171,STRANA ROVNOST ŠANCÍ,SRŠ
+2006,8107,Frýdlant nad Ostravicí,0.65,137,Strana zdravého rozumu,SZR
+2006,8107,Frýdlant nad Ostravicí,0.09,140,Balbínova poetická strana,BPS
+2006,8107,Frýdlant nad Ostravicí,0.12,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS
+2006,8107,Frýdlant nad Ostravicí,0.82,88,NEZÁVISLÍ,NEZ
+2006,8107,Frýdlant nad Ostravicí,0.05,55,"Koruna Česká (monar.strana Čech, Moravy a Slezska)",KČ
+2006,8107,Frýdlant nad Ostravicí,29.83,53,Občanská demokratická strana,ODS
+2006,8107,Frýdlant nad Ostravicí,38.29,7,Česká strana sociálně demokratická,ČSSD
+2006,8107,Frýdlant nad Ostravicí,2.12,129,SNK Evropští demokraté,SNK ED
+2006,8107,Frýdlant nad Ostravicí,0.12,102,Unie svobody - Demokratická unie,US-DEU
+2006,8107,Frýdlant nad Ostravicí,0.21,151,Helax-Ostrava se baví,HOB
+2006,8107,Frýdlant nad Ostravicí,0.29,98,"Pravý Blok-str.za ODVOLATELNOST politiků,REFERENDA",PB
+2006,8107,Frýdlant nad Ostravicí,0.05,178,4 VIZE-www.4vize.cz,4 VIZE
+2006,8107,Frýdlant nad Ostravicí,0.2,83,Moravané,M
+2006,8107,Frýdlant nad Ostravicí,4.3,5,Strana zelených,SZ
+2006,8107,Frýdlant nad Ostravicí,11.73,47,Komunistická strana Čech a Moravy,KSČM
+2006,8107,Frýdlant nad Ostravicí,0.05,338,Koalice pro Českou republiku,Koal_ČR
+2006,8107,Frýdlant nad Ostravicí,0.1,152,Národní strana,NS
+2006,8107,Frýdlant nad Ostravicí,10.01,1,Křesťan.a demokrat.unie-Českosl.strana lidová,KDU-ČSL
+2006,8107,Frýdlant nad Ostravicí,0.69,172,NEZÁVISLÍ DEMOKRATÉ (předseda V.Železný),NEZ/DEM
+2006,8107,Frýdlant nad Ostravicí,0.18,171,STRANA ROVNOST ŠANCÍ,SRŠ
 2006,8110,Jablunkov,0.5,137,Strana zdravého rozumu,SZR
 2006,8110,Jablunkov,0.03,140,Balbínova poetická strana,BPS
 2006,8110,Jablunkov,0.14,79,"Právo a Spravedlnost-ANO rodině,NE korupci a krim.",PaS

@@ -155,6 +155,10 @@ def main():
             election_records.extend(records)
 
     df = pd.DataFrame(election_records)
+
+    names_to_replace = {v: k for k, v in MUNICIPALITY_NAMES_MAP.items()}
+    df["municipality_name"] = df["municipality_name"].replace(names_to_replace)
+
     df.to_csv('elections2.csv', index=False, encoding='utf8')
 
 
