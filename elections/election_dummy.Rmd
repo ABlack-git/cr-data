@@ -11,7 +11,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(readr)
 library(dplyr)
-elections <- read_csv("~/Desktop/cr-data/elections/elections.csv")
+elections <- read_csv("~/Desktop/cr-data/elections/elections2.csv")
 ```
 
 
@@ -30,15 +30,17 @@ elections_with_dummy <- elections_major %>% mutate(winer = case_when (year == '2
    year == '2013'& (party_name_short =='ČSSD'|party_name_short == 'ANO 2011'|party_name_short == 'KDU-ČSL')~1,
    year == '2017'& (party_name_short =='ANO'|party_name_short =='ČSSD')~1,
    TRUE ~ 0))%>%ungroup()                                     
-distinct_munic_2006<- elections_with_dummy%>%filter(year == '2006')%>% distinct( municipality_name)
-distinct_munic_2010<- elections_with_dummy%>%filter(year == '2010')%>% distinct( municipality_name)
-distinct_munic_2013<- elections_with_dummy%>%filter(year == '2013')%>% distinct( municipality_name)
-distinct_munic_2017<- elections_with_dummy%>%filter(year == '2017')%>% distinct( municipality_name)
+distinct_munic_2006<- elections_with_dummy%>%filter(year == '2006')%>% distinct( municipality_id)
+distinct_munic_2010<- elections_with_dummy%>%filter(year == '2010')%>% distinct( municipality_id)
+distinct_munic_2013<- elections_with_dummy%>%filter(year == '2013')%>% distinct( municipality_id)
+distinct_munic_2017<- elections_with_dummy%>%filter(year == '2017')%>% distinct( municipality_id)
+merge <- anti_join(cz_ico_id, distinct_munic_2006, by = "municipality_id")
 ```
 Save file
 
 ```{r}
 write.csv(elections_with_dummy,"~/Desktop/cr-data/elections/election_with_dummy.csv", row.names=FALSE)
+write.csv(merge,"~/Desktop/election_2006.csv", row.names=FALSE)
 ```
 
 
