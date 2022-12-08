@@ -1,0 +1,58 @@
+---
+title: "rozvaha_2007_2009"
+output: html_document
+date: "2022-12-07"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readxl)
+library(readr)
+prijmy_2007 <- read_excel("Desktop/cr-data/statnipokladna/row data/prijmy_2007.xls")
+prijmy_2008 <- read_excel("Desktop/cr-data/statnipokladna/row data/prijmy_2008.xls")
+prijmy_2009 <- read_excel("Desktop/cr-data/statnipokladna/row data/prijmy_2009.xls")
+cz_structure_enriched <- read_csv("Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
+```
+
+Filter municipality with extented power 2007
+```{r}
+library(dplyr)
+prijmy_2007 <- prijmy_2007 %>% filter(prijmy_2007$`Třída položek (název)`!="Přijaté transfery")
+prijmy_2007_filtered <- prijmy_2007 %>% filter(prijmy_2007$`IČ (kód)` %in% cz_structure_enriched$ico)
+kapitalove_prijmy_07 <- prijmy_2007_filtered %>% filter(prijmy_2007_filtered$`Třída položek (název)`=="Kapitálové příjmy")
+```
+
+Filter municipality with extented power 2008
+```{r}
+library(dplyr)
+prijmy_2008 <- prijmy_2008 %>% filter(prijmy_2008$`Třída položek (název)`!="Přijaté transfery")
+prijmy_2008_filtered <- prijmy_2008 %>% filter(prijmy_2008$`IČ (kód)` %in% cz_structure_enriched$ico)
+kapitalove_prijmy_08 <- prijmy_2008_filtered %>% filter(prijmy_2008_filtered$`Třída položek (název)`=="Kapitálové příjmy")
+```
+
+Filter municipality with extented power 2009
+```{r}
+library(dplyr)
+prijmy_2009 <- prijmy_2009 %>% filter(prijmy_2009$`Třída položek (název)`!="Přijaté transfery")
+prijmy_2009_filtered <- prijmy_2009 %>% filter(prijmy_2009$`IČ (kód)` %in% cz_structure_enriched$ico)
+kapitalove_prijmy_09 <- prijmy_2009_filtered %>% filter(prijmy_2009_filtered$`Třída položek (název)`=="Kapitálové příjmy")
+summary(prijmy_archiv_2007_2009)
+```
+
+```{r}
+prijmy_archiv_2007_2009 <- rbind(prijmy_2007_filtered, prijmy_2008_filtered, prijmy_2009_filtered)
+prijmy_archiv_2007_2009 <- prijmy_archiv_2007_2009[,-2]
+prijmy_archiv_2007_2009 <- prijmy_archiv_2007_2009 %>% rename("ico"="IČ (kód)",
+                                                              "year"="Obdobi (kód)",
+                                                              "Class of revenue"="Třída položek (název)",
+                                                              "Revenue_CZK"="Výsledek od počátku roku")
+```
+
+Rename and save
+```{r}
+revenue_2007_2009 <- prijmy_archiv_2007_2009
+write.csv(revenue_2007_2009,"~/Desktop/cr-data/statnipokladna/revenue_2007_2009.csv", row.names=FALSE)
+```
