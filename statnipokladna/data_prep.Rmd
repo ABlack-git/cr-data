@@ -28,3 +28,26 @@ budget <- budget %>% mutate(vykaz_date=sprintf("%s-%s-31", vykaz_year, vykaz_mon
 cats <- sp_get_codelist("polozka")
 budget_enriched <-budget %>% sp_add_codelist(cats) %>% sp_add_codelist("polozka")
 ```
+
+Filter revenue 
+```{r}
+budget_specific_columns <- budget_enriched[,c("vykaz_year", "ico", "budget_spending","trida")]
+budget_specific_columns <- budget_specific_columns %>% rename("year" = "vykaz_year",
+                                                        "Revenue_CZK" = "budget_spending",
+                                                        "class_of_revenue" = "trida")
+```
+```{r}
+revenue <- c("Daňové příjmy", "Nedaňové příjmy", "Kapitálové příjmy")
+revenue_2010_2020 <- budget_specific_columns %>% filter(class_of_revenue %in% revenue)
+
+```
+
+Summarize by year and ico 
+```{r}
+revenue_2010_2020 <- revenue_2010_2020 %>% group_by(year, ico, class_of_revenue) %>% summarise(Revenue_CZK=sum(Revenue_CZK))
+```
+```{r}
+write.csv(revenue_2010_2020,"~/Desktop/cr-data/statnipokladna/revenue_2010_2020.csv", row.names=FALSE)
+```
+
+```
