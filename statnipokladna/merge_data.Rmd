@@ -1,0 +1,33 @@
+---
+title: "merge_data"
+output: html_document
+date: '2022-12-10'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+```
+
+```{r}
+rev_2007 <- read.csv("revenue_2007_2009.csv", colClasses = c("year"="character"))
+rev_2010 <- read.csv("revenue_2010_2020.csv", colClasses = c("year"="character"))
+```
+
+```{r}
+rev_2007$year <- as.Date(paste(rev_2007$year, "/01", sep=""), format="%Y/%m/%d")
+rev_2007$year<- format(rev_2007$year, "%Y")
+```
+
+```{r}
+rev_2007 <- rev_2007 %>% rename(class_of_revenue=Class.of.revenue)
+merged <- rbind(rev_2007, rev_2010)
+merged$year <- sapply(merged$year, as.numeric)
+```
+
+```{r}
+write.csv(merged, "revenue_2007_2020.csv")
+```
