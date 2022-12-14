@@ -1,0 +1,48 @@
+---
+title: "data"
+output: html_document
+date: "2022-12-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+cz_structure <- read_csv("~/Desktop/cr-data/data_for_model/cz-structure-enriched.csv", 
+    col_types = cols(ico = col_double()))
+cz_structure <- cz_structure[,c("municipality_id", "municipality", "ico")]
+population <- read_csv("~/Desktop/cr-data/data_for_model/population_by_regions.csv")
+revenue <- read_csv("~/Desktop/cr-data/data_for_model/revenue_by_class.csv")
+assets <- read_csv("~/Desktop/cr-data/data_for_model/tangible_assets_2007_2020.csv")
+assets <- assets[,-1]
+saldo <- read_csv("~/Desktop/cr-data/data_for_model/saldo_2007_2020.csv")
+saldo <- saldo[,-1]
+unemployment <- read_csv("~/Desktop/cr-data/data_for_model/Unemployment_long.csv")
+unemployment <- unemployment[,-2]
+eu_funds <- read_csv("~/Desktop/cr-data/eu_funds/funds_merged.csv")
+eu_funds <- eu_funds[,c(1,5,3)]
+```
+
+```{r}
+library(dplyr)
+revenue_assets <- full_join(revenue,assets, by = c("year", "ico"))
+municipality_wealth <- full_join(revenue_assets, saldo, by = c("year", "ico"))
+municipality_wealth_enriched <- full_join(municipality_wealth, cz_structure, by ="ico")
+municipality_wealth_enriched$date <- as.Date(paste(municipality_wealth_enriched$year, "-12-31", sep=""), format="%Y-%m-%d")
+population <- population[,c("code_of_unit", "population_total", "date")] %>% filter(date > "2006-12-31")
+population <- population %>% rename("municipality_id" = "code_of_unit")
+```
+
+```{r}
+municipality_wealth_enriched <- full_join(municipality_wealth_enriched, population, by = c("municipality_id", "date"))
+dataset <- inner_join(municipality_wealth_enriched, unemployment, by = c("municipality_id", "year"))
+dataset <- full_join(dataset, eu_funds, by = c("year","municipality_id"))
+dataset <- dataset %>% replace(is.na(.), 0)
+dataset <- dataset %>% rename("EU_fund_total_CZK" = "Grant_amount_total_CZK")
+```
+
+```{r}
+write_csv(dataset, 'dataset.csv')
+```
