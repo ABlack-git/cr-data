@@ -1,0 +1,821 @@
+"year","municipality_id","municipality_name","vote_percentage","party_id","party_name","party_name_short","winer","coallition"
+2006,2101,"Benešov",38.19,53,"Občanská demokratická strana","ODS",1,1
+2006,2102,"Beroun",43.32,53,"Občanská demokratická strana","ODS",1,1
+2006,2103,"Brandýs nad Labem-Stará Boleslav",46.05,53,"Občanská demokratická strana","ODS",1,1
+2006,2104,"Čáslav",42.78,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,2105,"Černošice",54.82,53,"Občanská demokratická strana","ODS",1,1
+2006,2106,"Český Brod",45.6,53,"Občanská demokratická strana","ODS",1,1
+2006,2107,"Dobříš",40.66,53,"Občanská demokratická strana","ODS",1,1
+2006,2108,"Hořovice",37.88,53,"Občanská demokratická strana","ODS",1,1
+2006,2109,"Kladno",38.16,53,"Občanská demokratická strana","ODS",1,1
+2006,2110,"Kolín",38.49,53,"Občanská demokratická strana","ODS",1,1
+2006,2111,"Kralupy nad Vltavou",40.33,53,"Občanská demokratická strana","ODS",1,1
+2006,2112,"Kutná Hora",39.72,53,"Občanská demokratická strana","ODS",1,1
+2006,2113,"Lysá nad Labem",42.85,53,"Občanská demokratická strana","ODS",1,1
+2006,2114,"Mělník",41.27,53,"Občanská demokratická strana","ODS",1,1
+2006,2115,"Mladá Boleslav",41.18,53,"Občanská demokratická strana","ODS",1,1
+2006,2116,"Mnichovo Hradiště",40.01,53,"Občanská demokratická strana","ODS",1,1
+2006,2117,"Neratovice",42.49,53,"Občanská demokratická strana","ODS",1,1
+2006,2118,"Nymburk",37.53,53,"Občanská demokratická strana","ODS",1,1
+2006,2119,"Poděbrady",46.24,53,"Občanská demokratická strana","ODS",1,1
+2006,2120,"Příbram",36.8,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,2121,"Rakovník",35.76,53,"Občanská demokratická strana","ODS",1,1
+2006,2122,"Říčany",52.08,53,"Občanská demokratická strana","ODS",1,1
+2006,2123,"Sedlčany",37.37,53,"Občanská demokratická strana","ODS",1,1
+2006,2124,"Slaný",38.37,53,"Občanská demokratická strana","ODS",1,1
+2006,2125,"Vlašim",39.3,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,2126,"Votice",36.63,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3101,"Blatná",35.53,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3102,"České Budějovice",42.77,53,"Občanská demokratická strana","ODS",1,1
+2006,3103,"Český Krumlov",38.64,53,"Občanská demokratická strana","ODS",1,1
+2006,3104,"Dačice",30.72,53,"Občanská demokratická strana","ODS",1,1
+2006,3105,"Jindřichův Hradec",35.87,53,"Občanská demokratická strana","ODS",1,1
+2006,3106,"Kaplice",34.72,53,"Občanská demokratická strana","ODS",1,1
+2006,3107,"Milevsko",37.37,53,"Občanská demokratická strana","ODS",1,1
+2006,3108,"Písek",39.71,53,"Občanská demokratická strana","ODS",1,1
+2006,3109,"Prachatice",37.99,53,"Občanská demokratická strana","ODS",1,1
+2006,3110,"Soběslav",37.56,53,"Občanská demokratická strana","ODS",1,1
+2006,3111,"Strakonice",36.31,53,"Občanská demokratická strana","ODS",1,1
+2006,3112,"Tábor",38.34,53,"Občanská demokratická strana","ODS",1,1
+2006,3113,"Trhové Sviny",35.03,53,"Občanská demokratická strana","ODS",1,1
+2006,3114,"Třeboň",39.45,53,"Občanská demokratická strana","ODS",1,1
+2006,3115,"Týn nad Vltavou",38.19,53,"Občanská demokratická strana","ODS",1,1
+2006,3116,"Vimperk",36.75,53,"Občanská demokratická strana","ODS",1,1
+2006,3117,"Vodňany",37.87,53,"Občanská demokratická strana","ODS",1,1
+2006,3201,"Blovice",36.94,53,"Občanská demokratická strana","ODS",1,1
+2006,3202,"Domažlice",35.34,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3203,"Horažďovice",36.05,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3204,"Horšovský Týn",35.59,53,"Občanská demokratická strana","ODS",1,1
+2006,3205,"Klatovy",36.39,53,"Občanská demokratická strana","ODS",1,1
+2006,3206,"Kralovice",31.81,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3207,"Nepomuk",34.07,53,"Občanská demokratická strana","ODS",1,1
+2006,3208,"Nýřany",35.17,53,"Občanská demokratická strana","ODS",1,1
+2006,3209,"Plzeň",42.15,53,"Občanská demokratická strana","ODS",1,1
+2006,3210,"Přeštice",35.4,53,"Občanská demokratická strana","ODS",1,1
+2006,3211,"Rokycany",39.51,53,"Občanská demokratická strana","ODS",1,1
+2006,3212,"Stod",36.04,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3213,"Stříbro",36.56,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,3214,"Sušice",37.34,53,"Občanská demokratická strana","ODS",1,1
+2006,3215,"Tachov",36.53,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4101,"Aš",33.41,53,"Občanská demokratická strana","ODS",1,1
+2006,4102,"Cheb",35.42,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4103,"Karlovy Vary",42.41,53,"Občanská demokratická strana","ODS",1,1
+2006,4104,"Kraslice",36.07,53,"Občanská demokratická strana","ODS",1,1
+2006,4105,"Mariánské Lázně",44.29,53,"Občanská demokratická strana","ODS",1,1
+2006,4106,"Ostrov",36.43,53,"Občanská demokratická strana","ODS",1,1
+2006,4107,"Sokolov",37.62,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4201,"Bílina",40.3,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4202,"Děčín",38.13,53,"Občanská demokratická strana","ODS",1,1
+2006,4203,"Chomutov",39.19,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4204,"Kadaň",38.21,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4205,"Litoměřice",39.86,53,"Občanská demokratická strana","ODS",1,1
+2006,4206,"Litvínov",34.5,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4207,"Louny",37.16,53,"Občanská demokratická strana","ODS",1,1
+2006,4208,"Lovosice",37.77,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4209,"Most",40.22,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4210,"Podbořany",38.53,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4211,"Roudnice nad Labem",41.75,53,"Občanská demokratická strana","ODS",1,1
+2006,4212,"Rumburk",36.07,53,"Občanská demokratická strana","ODS",1,1
+2006,4213,"Teplice",40.43,53,"Občanská demokratická strana","ODS",1,1
+2006,4214,"Ústí nad Labem",40.37,53,"Občanská demokratická strana","ODS",1,1
+2006,4215,"Varnsdorf",37.22,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,4216,"Žatec",36.04,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5101,"Česká Lípa",36.2,53,"Občanská demokratická strana","ODS",1,1
+2006,5102,"Frýdlant",33.97,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5103,"Jablonec nad Nisou",45.04,53,"Občanská demokratická strana","ODS",1,1
+2006,5104,"Jilemnice",39.77,53,"Občanská demokratická strana","ODS",1,1
+2006,5105,"Liberec",40.44,53,"Občanská demokratická strana","ODS",1,1
+2006,5106,"Nový Bor",43.42,53,"Občanská demokratická strana","ODS",1,1
+2006,5107,"Semily",36.23,53,"Občanská demokratická strana","ODS",1,1
+2006,5108,"Tanvald",37.03,53,"Občanská demokratická strana","ODS",1,1
+2006,5109,"Turnov",43.98,53,"Občanská demokratická strana","ODS",1,1
+2006,5110,"Železný Brod",45.41,53,"Občanská demokratická strana","ODS",1,1
+2006,5201,"Broumov",33.83,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5202,"Dobruška",33.34,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5203,"Dvůr Králové nad Labem",41.49,53,"Občanská demokratická strana","ODS",1,1
+2006,5204,"Hořice",38.51,53,"Občanská demokratická strana","ODS",1,1
+2006,5205,"Hradec Králové",41.58,53,"Občanská demokratická strana","ODS",1,1
+2006,5206,"Jaroměř",35.51,53,"Občanská demokratická strana","ODS",1,1
+2006,5207,"Jičín",38.91,53,"Občanská demokratická strana","ODS",1,1
+2006,5208,"Kostelec nad Orlicí",39.48,53,"Občanská demokratická strana","ODS",1,1
+2006,5209,"Náchod",39.36,53,"Občanská demokratická strana","ODS",1,1
+2006,5210,"Nová Paka",40.17,53,"Občanská demokratická strana","ODS",1,1
+2006,5211,"Nové Město nad Metují",40.01,53,"Občanská demokratická strana","ODS",1,1
+2006,5212,"Nový Bydžov",34.86,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5213,"Rychnov nad Kněžnou",34.18,53,"Občanská demokratická strana","ODS",1,1
+2006,5214,"Trutnov",40.7,53,"Občanská demokratická strana","ODS",1,1
+2006,5215,"Vrchlabí",43.92,53,"Občanská demokratická strana","ODS",1,1
+2006,5301,"Česká Třebová",39.96,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5302,"Hlinsko",34.79,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5303,"Holice",37.76,53,"Občanská demokratická strana","ODS",1,1
+2006,5304,"Chrudim",37.92,53,"Občanská demokratická strana","ODS",1,1
+2006,5305,"Králíky",37.8,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5306,"Lanškroun",38.73,53,"Občanská demokratická strana","ODS",1,1
+2006,5307,"Litomyšl",38.56,53,"Občanská demokratická strana","ODS",1,1
+2006,5308,"Moravská Třebová",40.6,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5309,"Pardubice",40.29,53,"Občanská demokratická strana","ODS",1,1
+2006,5310,"Polička",36.84,53,"Občanská demokratická strana","ODS",1,1
+2006,5311,"Přelouč",35.41,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5312,"Svitavy",39.89,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,5313,"Ústí nad Orlicí",37.31,53,"Občanská demokratická strana","ODS",1,1
+2006,5314,"Vysoké Mýto",36.79,53,"Občanská demokratická strana","ODS",1,1
+2006,5315,"Žamberk",43.52,53,"Občanská demokratická strana","ODS",1,1
+2006,6101,"Bystřice nad Pernštejnem",48.05,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6102,"Havlíčkův Brod",34.91,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6103,"Humpolec",33.16,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6104,"Chotěboř",35.44,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6105,"Jihlava",34.65,53,"Občanská demokratická strana","ODS",1,1
+2006,6106,"Moravské Budějovice",34.2,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6107,"Náměšť nad Oslavou",40.12,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6108,"Nové Město na Moravě",38.23,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6109,"Pacov",35.5,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6110,"Pelhřimov",36.2,53,"Občanská demokratická strana","ODS",1,1
+2006,6111,"Světlá nad Sázavou",33.45,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6112,"Telč",32.74,53,"Občanská demokratická strana","ODS",1,1
+2006,6113,"Třebíč",34.33,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6114,"Velké Meziříčí",38.28,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6115,"Žďár nad Sázavou",37.8,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6201,"Blansko",36.54,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6202,"Boskovice",38.67,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6203,"Brno",37.74,53,"Občanská demokratická strana","ODS",1,1
+2006,6204,"Břeclav",33.46,53,"Občanská demokratická strana","ODS",1,1
+2006,6205,"Bučovice",39.78,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6206,"Hodonín",35.91,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6207,"Hustopeče",35.42,53,"Občanská demokratická strana","ODS",1,1
+2006,6208,"Ivančice",30.26,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6209,"Kuřim",35.62,53,"Občanská demokratická strana","ODS",1,1
+2006,6210,"Kyjov",33.83,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6211,"Mikulov",32.57,53,"Občanská demokratická strana","ODS",1,1
+2006,6212,"Moravský Krumlov",32.87,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6213,"Pohořelice",32.57,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6214,"Rosice",32,53,"Občanská demokratická strana","ODS",1,1
+2006,6215,"Slavkov u Brna",34.41,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6216,"Šlapanice",34.76,53,"Občanská demokratická strana","ODS",1,1
+2006,6217,"Tišnov",35.72,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6218,"Veselí nad Moravou",36.95,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6219,"Vyškov",41.19,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6220,"Znojmo",34.2,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,6221,"Židlochovice",34.59,53,"Občanská demokratická strana","ODS",1,1
+2006,7101,"Hranice",34.83,53,"Občanská demokratická strana","ODS",1,1
+2006,7102,"Jeseník",35.23,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7103,"Konice",39.63,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7104,"Lipník nad Bečvou",34.56,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7105,"Litovel",41.67,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7106,"Mohelnice",35.41,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7107,"Olomouc",36.25,53,"Občanská demokratická strana","ODS",1,1
+2006,7108,"Prostějov",36.57,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7109,"Přerov",39.46,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7110,"Šternberk",35.2,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7111,"Šumperk",37.96,53,"Občanská demokratická strana","ODS",1,1
+2006,7112,"Uničov",36.74,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7113,"Zábřeh",36.17,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7201,"Bystřice pod Hostýnem",35.26,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7202,"Holešov",36.8,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7203,"Kroměříž",35.05,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7204,"Luhačovice",34.13,53,"Občanská demokratická strana","ODS",1,1
+2006,7205,"Otrokovice",39.91,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7206,"Rožnov pod Radhoštěm",41.43,53,"Občanská demokratická strana","ODS",1,1
+2006,7207,"Uherské Hradiště",35.25,53,"Občanská demokratická strana","ODS",1,1
+2006,7208,"Uherský Brod",34.03,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7209,"Valašské Klobouky",34.98,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,7210,"Valašské Meziříčí",36.65,53,"Občanská demokratická strana","ODS",1,1
+2006,7211,"Vizovice",39.09,53,"Občanská demokratická strana","ODS",1,1
+2006,7212,"Vsetín",38.06,53,"Občanská demokratická strana","ODS",1,1
+2006,7213,"Zlín",41,53,"Občanská demokratická strana","ODS",1,1
+2006,8101,"Bílovec",36.58,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8102,"Bohumín",47,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8103,"Bruntál",36.76,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8104,"Český Těšín",40.69,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8105,"Frenštát pod Radhoštěm",36.75,53,"Občanská demokratická strana","ODS",1,1
+2006,8106,"Frýdek-Místek",41.9,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8107,"Frýdlant nad Ostravicí",38.29,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8108,"Havířov",47.22,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8109,"Hlučín",41.52,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8110,"Jablunkov",40.81,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8111,"Karviná",52.83,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8112,"Kopřivnice",35.98,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8113,"Kravaře",35.9,53,"Občanská demokratická strana","ODS",1,1
+2006,8114,"Krnov",40.76,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8115,"Nový Jičín",34.32,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8116,"Odry",36.43,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8117,"Opava",37.56,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8118,"Orlová",50.71,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8119,"Ostrava",39.64,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8120,"Rýmařov",39.84,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8121,"Třinec",45.14,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2006,8122,"Vítkov",35.67,7,"Česká strana sociálně demokratická","ČSSD",0,0
+2010,2101,"Benešov",24.92,53,"Občanská demokratická strana","ODS",0,1
+2010,2102,"Beroun",23.41,53,"Občanská demokratická strana","ODS",0,1
+2010,2103,"Brandýs nad Labem-Stará Boleslav",26.24,53,"Občanská demokratická strana","ODS",0,1
+2010,2104,"Čáslav",31.24,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2105,"Černošice",36.46,721,"TOP 09","TOP 09",0,1
+2010,2106,"Český Brod",26.53,53,"Občanská demokratická strana","ODS",0,1
+2010,2107,"Dobříš",25.24,53,"Občanská demokratická strana","ODS",0,1
+2010,2108,"Hořovice",24.34,53,"Občanská demokratická strana","ODS",0,1
+2010,2109,"Kladno",23.01,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2110,"Kolín",24.43,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2111,"Kralupy nad Vltavou",23.36,53,"Občanská demokratická strana","ODS",0,1
+2010,2112,"Kutná Hora",23.73,53,"Občanská demokratická strana","ODS",0,1
+2010,2113,"Lysá nad Labem",25.71,53,"Občanská demokratická strana","ODS",0,1
+2010,2114,"Mělník",26.69,53,"Občanská demokratická strana","ODS",0,1
+2010,2115,"Mladá Boleslav",27.03,53,"Občanská demokratická strana","ODS",0,1
+2010,2116,"Mnichovo Hradiště",24.78,53,"Občanská demokratická strana","ODS",0,1
+2010,2117,"Neratovice",22.42,53,"Občanská demokratická strana","ODS",0,1
+2010,2118,"Nymburk",23.12,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2119,"Poděbrady",29.5,53,"Občanská demokratická strana","ODS",0,1
+2010,2120,"Příbram",24.7,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2121,"Rakovník",24.05,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2122,"Říčany",29.8,721,"TOP 09","TOP 09",0,1
+2010,2123,"Sedlčany",27.97,53,"Občanská demokratická strana","ODS",0,1
+2010,2124,"Slaný",24.01,53,"Občanská demokratická strana","ODS",0,1
+2010,2125,"Vlašim",25.45,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,2126,"Votice",27,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3101,"Blatná",24.76,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3102,"České Budějovice",23.31,53,"Občanská demokratická strana","ODS",0,1
+2010,3103,"Český Krumlov",22.46,53,"Občanská demokratická strana","ODS",0,1
+2010,3104,"Dačice",20.24,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3105,"Jindřichův Hradec",22.28,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3106,"Kaplice",22.21,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3107,"Milevsko",23.21,53,"Občanská demokratická strana","ODS",0,1
+2010,3108,"Písek",24.11,53,"Občanská demokratická strana","ODS",0,1
+2010,3109,"Prachatice",23.79,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3110,"Soběslav",23.72,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3111,"Strakonice",23.39,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3112,"Tábor",23.33,53,"Občanská demokratická strana","ODS",0,1
+2010,3113,"Trhové Sviny",20.78,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3114,"Třeboň",23.38,53,"Občanská demokratická strana","ODS",0,1
+2010,3115,"Týn nad Vltavou",19.75,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3116,"Vimperk",22.92,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3117,"Vodňany",22.62,53,"Občanská demokratická strana","ODS",0,1
+2010,3201,"Blovice",23.12,53,"Občanská demokratická strana","ODS",0,1
+2010,3202,"Domažlice",25.44,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3203,"Horažďovice",26.16,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3204,"Horšovský Týn",22.69,53,"Občanská demokratická strana","ODS",0,1
+2010,3205,"Klatovy",22.72,53,"Občanská demokratická strana","ODS",0,1
+2010,3206,"Kralovice",22.43,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3207,"Nepomuk",21.59,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3208,"Nýřany",24.42,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3209,"Plzeň",23.67,53,"Občanská demokratická strana","ODS",0,1
+2010,3210,"Přeštice",23.27,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3211,"Rokycany",23.08,53,"Občanská demokratická strana","ODS",0,1
+2010,3212,"Stod",24.33,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3213,"Stříbro",23.97,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,3214,"Sušice",23.16,53,"Občanská demokratická strana","ODS",0,1
+2010,3215,"Tachov",25.16,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4101,"Aš",24.67,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4102,"Cheb",26.19,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4103,"Karlovy Vary",22.11,721,"TOP 09","TOP 09",0,1
+2010,4104,"Kraslice",22.67,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4105,"Mariánské Lázně",25.15,53,"Občanská demokratická strana","ODS",0,1
+2010,4106,"Ostrov",22.88,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4107,"Sokolov",26.98,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4201,"Bílina",26.46,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4202,"Děčín",26.26,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4203,"Chomutov",28.82,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4204,"Kadaň",28.11,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4205,"Litoměřice",23.69,53,"Občanská demokratická strana","ODS",0,1
+2010,4206,"Litvínov",23.71,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4207,"Louny",24.53,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4208,"Lovosice",25.59,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4209,"Most",26.88,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4210,"Podbořany",26.74,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4211,"Roudnice nad Labem",23.9,53,"Občanská demokratická strana","ODS",0,1
+2010,4212,"Rumburk",24.17,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4213,"Teplice",23.01,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4214,"Ústí nad Labem",23.44,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4215,"Varnsdorf",24.96,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,4216,"Žatec",24.33,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5101,"Česká Lípa",23.35,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5102,"Frýdlant",22.41,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5103,"Jablonec nad Nisou",25.07,53,"Občanská demokratická strana","ODS",0,1
+2010,5104,"Jilemnice",23.48,53,"Občanská demokratická strana","ODS",0,1
+2010,5105,"Liberec",23.07,721,"TOP 09","TOP 09",0,1
+2010,5106,"Nový Bor",21.37,53,"Občanská demokratická strana","ODS",0,1
+2010,5107,"Semily",22.65,721,"TOP 09","TOP 09",0,1
+2010,5108,"Tanvald",22.39,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5109,"Turnov",25.04,53,"Občanská demokratická strana","ODS",0,1
+2010,5110,"Železný Brod",30.37,721,"TOP 09","TOP 09",0,1
+2010,5201,"Broumov",23.89,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5202,"Dobruška",20.15,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5203,"Dvůr Králové nad Labem",24.37,53,"Občanská demokratická strana","ODS",0,1
+2010,5204,"Hořice",22.1,53,"Občanská demokratická strana","ODS",0,1
+2010,5205,"Hradec Králové",25.42,721,"TOP 09","TOP 09",0,1
+2010,5206,"Jaroměř",20.95,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5207,"Jičín",20.19,721,"TOP 09","TOP 09",0,1
+2010,5208,"Kostelec nad Orlicí",22.21,53,"Občanská demokratická strana","ODS",0,1
+2010,5209,"Náchod",20.93,53,"Občanská demokratická strana","ODS",0,1
+2010,5210,"Nová Paka",28.63,721,"TOP 09","TOP 09",0,1
+2010,5211,"Nové Město nad Metují",23.42,53,"Občanská demokratická strana","ODS",0,1
+2010,5212,"Nový Bydžov",23.3,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5213,"Rychnov nad Kněžnou",20.81,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5214,"Trutnov",23.75,53,"Občanská demokratická strana","ODS",0,1
+2010,5215,"Vrchlabí",22.98,53,"Občanská demokratická strana","ODS",0,1
+2010,5301,"Česká Třebová",26.66,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5302,"Hlinsko",27.75,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5303,"Holice",22.23,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5304,"Chrudim",22.29,53,"Občanská demokratická strana","ODS",0,1
+2010,5305,"Králíky",26.87,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5306,"Lanškroun",22.9,53,"Občanská demokratická strana","ODS",0,1
+2010,5307,"Litomyšl",25.2,53,"Občanská demokratická strana","ODS",0,1
+2010,5308,"Moravská Třebová",30.18,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5309,"Pardubice",22.28,53,"Občanská demokratická strana","ODS",0,1
+2010,5310,"Polička",25.24,53,"Občanská demokratická strana","ODS",0,1
+2010,5311,"Přelouč",22.67,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5312,"Svitavy",27.96,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,5313,"Ústí nad Orlicí",21.95,53,"Občanská demokratická strana","ODS",0,1
+2010,5314,"Vysoké Mýto",21.77,53,"Občanská demokratická strana","ODS",0,1
+2010,5315,"Žamberk",23.15,53,"Občanská demokratická strana","ODS",0,1
+2010,6101,"Bystřice nad Pernštejnem",33.25,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6102,"Havlíčkův Brod",23.34,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6103,"Humpolec",24.5,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6104,"Chotěboř",24.64,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6105,"Jihlava",21.5,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6106,"Moravské Budějovice",23.79,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6107,"Náměšť nad Oslavou",26.91,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6108,"Nové Město na Moravě",24.75,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6109,"Pacov",23.27,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6110,"Pelhřimov",23.92,53,"Občanská demokratická strana","ODS",0,1
+2010,6111,"Světlá nad Sázavou",22.77,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6112,"Telč",19.73,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6113,"Třebíč",22,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6114,"Velké Meziříčí",23.32,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6115,"Žďár nad Sázavou",22.73,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6201,"Blansko",25.44,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6202,"Boskovice",26.8,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6203,"Brno",21.98,53,"Občanská demokratická strana","ODS",0,1
+2010,6204,"Břeclav",25.78,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6205,"Bučovice",29.26,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6206,"Hodonín",26.3,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6207,"Hustopeče",23.18,53,"Občanská demokratická strana","ODS",0,1
+2010,6208,"Ivančice",22.42,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6209,"Kuřim",23.4,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6210,"Kyjov",23.11,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6211,"Mikulov",20.34,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6212,"Moravský Krumlov",21.13,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6213,"Pohořelice",25.59,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6214,"Rosice",20.86,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6215,"Slavkov u Brna",23.73,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6216,"Šlapanice",21.06,721,"TOP 09","TOP 09",0,1
+2010,6217,"Tišnov",24.52,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6218,"Veselí nad Moravou",27.15,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6219,"Vyškov",28.64,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6220,"Znojmo",24.68,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,6221,"Židlochovice",23.62,53,"Občanská demokratická strana","ODS",0,1
+2010,7101,"Hranice",21.46,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7102,"Jeseník",24.23,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7103,"Konice",27.26,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7104,"Lipník nad Bečvou",24.98,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7105,"Litovel",28.25,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7106,"Mohelnice",25.64,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7107,"Olomouc",22.48,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7108,"Prostějov",26.89,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7109,"Přerov",26.78,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7110,"Šternberk",24.89,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7111,"Šumperk",24.04,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7112,"Uničov",27.2,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7113,"Zábřeh",25.09,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7201,"Bystřice pod Hostýnem",22.61,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7202,"Holešov",24.12,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7203,"Kroměříž",21.69,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7204,"Luhačovice",23.26,53,"Občanská demokratická strana","ODS",0,1
+2010,7205,"Otrokovice",26.79,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7206,"Rožnov pod Radhoštěm",28.76,53,"Občanská demokratická strana","ODS",0,1
+2010,7207,"Uherské Hradiště",23.73,53,"Občanská demokratická strana","ODS",0,1
+2010,7208,"Uherský Brod",23.71,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7209,"Valašské Klobouky",22.38,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,7210,"Valašské Meziříčí",24.57,53,"Občanská demokratická strana","ODS",0,1
+2010,7211,"Vizovice",23.03,53,"Občanská demokratická strana","ODS",0,1
+2010,7212,"Vsetín",27.12,53,"Občanská demokratická strana","ODS",0,1
+2010,7213,"Zlín",24.16,53,"Občanská demokratická strana","ODS",0,1
+2010,8101,"Bílovec",25.61,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8102,"Bohumín",39.2,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8103,"Bruntál",24.73,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8104,"Český Těšín",30.86,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8105,"Frenštát pod Radhoštěm",23.78,53,"Občanská demokratická strana","ODS",0,1
+2010,8106,"Frýdek-Místek",29.67,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8107,"Frýdlant nad Ostravicí",25.65,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8108,"Havířov",34.51,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8109,"Hlučín",29.26,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8110,"Jablunkov",33.36,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8111,"Karviná",42.83,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8112,"Kopřivnice",24.82,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8113,"Kravaře",22.84,53,"Občanská demokratická strana","ODS",0,1
+2010,8114,"Krnov",27.52,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8115,"Nový Jičín",24.28,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8116,"Odry",26.52,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8117,"Opava",23.32,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8118,"Orlová",37.69,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8119,"Ostrava",28.18,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8120,"Rýmařov",33.98,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8121,"Třinec",33.39,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2010,8122,"Vítkov",28.1,7,"Česká strana sociálně demokratická","ČSSD",1,0
+2013,2101,"Benešov",20.38,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2102,"Beroun",19.67,768,"ANO 2011","ANO 2011",0,1
+2013,2103,"Brandýs nad Labem-Stará Boleslav",19.56,768,"ANO 2011","ANO 2011",0,1
+2013,2104,"Čáslav",28.98,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2105,"Černošice",32.81,721,"TOP 09","TOP 09",0,0
+2013,2106,"Český Brod",20.11,768,"ANO 2011","ANO 2011",0,1
+2013,2107,"Dobříš",19.25,768,"ANO 2011","ANO 2011",0,1
+2013,2108,"Hořovice",22.06,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2109,"Kladno",21.74,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2110,"Kolín",21.95,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2111,"Kralupy nad Vltavou",19.66,768,"ANO 2011","ANO 2011",0,1
+2013,2112,"Kutná Hora",22.37,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2113,"Lysá nad Labem",18.92,768,"ANO 2011","ANO 2011",0,1
+2013,2114,"Mělník",19.44,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2115,"Mladá Boleslav",20.1,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2116,"Mnichovo Hradiště",21.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2117,"Neratovice",22.56,768,"ANO 2011","ANO 2011",0,1
+2013,2118,"Nymburk",22.55,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2119,"Poděbrady",19.81,768,"ANO 2011","ANO 2011",0,1
+2013,2120,"Příbram",22.21,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2121,"Rakovník",23.37,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2122,"Říčany",24.93,721,"TOP 09","TOP 09",0,0
+2013,2123,"Sedlčany",20.49,768,"ANO 2011","ANO 2011",0,1
+2013,2124,"Slaný",21.46,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2125,"Vlašim",23.21,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,2126,"Votice",22.25,768,"ANO 2011","ANO 2011",0,1
+2013,3101,"Blatná",23.79,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3102,"České Budějovice",18.48,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3103,"Český Krumlov",19.46,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3104,"Dačice",20.3,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3105,"Jindřichův Hradec",23.68,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3106,"Kaplice",22.38,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3107,"Milevsko",21.17,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3108,"Písek",20.41,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3109,"Prachatice",23.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3110,"Soběslav",25.41,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3111,"Strakonice",22.36,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3112,"Tábor",21.25,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3113,"Trhové Sviny",21.17,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3114,"Třeboň",20.79,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3115,"Týn nad Vltavou",20.39,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3116,"Vimperk",20.82,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3117,"Vodňany",19.44,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3201,"Blovice",21.11,768,"ANO 2011","ANO 2011",0,1
+2013,3202,"Domažlice",23.68,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3203,"Horažďovice",25.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3204,"Horšovský Týn",22.45,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3205,"Klatovy",22.02,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3206,"Kralovice",23.43,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3207,"Nepomuk",24.84,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3208,"Nýřany",26.71,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3209,"Plzeň",20.27,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3210,"Přeštice",23.09,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3211,"Rokycany",20.93,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3212,"Stod",25.41,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3213,"Stříbro",24.04,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3214,"Sušice",19.86,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,3215,"Tachov",25.22,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4101,"Aš",21.93,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4102,"Cheb",23.71,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4103,"Karlovy Vary",22.55,768,"ANO 2011","ANO 2011",0,1
+2013,4104,"Kraslice",22.97,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4105,"Mariánské Lázně",22.12,768,"ANO 2011","ANO 2011",0,1
+2013,4106,"Ostrov",22.6,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4107,"Sokolov",26.36,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4201,"Bílina",25.67,47,"Komunistická strana Čech a Moravy","KSČM",0,0
+2013,4202,"Děčín",22.46,768,"ANO 2011","ANO 2011",0,1
+2013,4203,"Chomutov",24.68,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4204,"Kadaň",23.66,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4205,"Litoměřice",19.15,768,"ANO 2011","ANO 2011",0,1
+2013,4206,"Litvínov",22.42,768,"ANO 2011","ANO 2011",0,1
+2013,4207,"Louny",21.96,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4208,"Lovosice",32.04,768,"ANO 2011","ANO 2011",0,1
+2013,4209,"Most",24.83,768,"ANO 2011","ANO 2011",0,1
+2013,4210,"Podbořany",30.59,47,"Komunistická strana Čech a Moravy","KSČM",0,0
+2013,4211,"Roudnice nad Labem",19.22,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4212,"Rumburk",21.65,768,"ANO 2011","ANO 2011",0,1
+2013,4213,"Teplice",20.35,768,"ANO 2011","ANO 2011",0,1
+2013,4214,"Ústí nad Labem",23.22,768,"ANO 2011","ANO 2011",0,1
+2013,4215,"Varnsdorf",21.59,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,4216,"Žatec",22.85,47,"Komunistická strana Čech a Moravy","KSČM",0,0
+2013,5101,"Česká Lípa",21.53,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5102,"Frýdlant",22.14,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5103,"Jablonec nad Nisou",24.23,768,"ANO 2011","ANO 2011",0,1
+2013,5104,"Jilemnice",18.64,768,"ANO 2011","ANO 2011",0,1
+2013,5105,"Liberec",23.43,768,"ANO 2011","ANO 2011",0,1
+2013,5106,"Nový Bor",23.18,768,"ANO 2011","ANO 2011",0,1
+2013,5107,"Semily",20.83,721,"TOP 09","TOP 09",0,0
+2013,5108,"Tanvald",20.68,768,"ANO 2011","ANO 2011",0,1
+2013,5109,"Turnov",22.21,721,"TOP 09","TOP 09",0,0
+2013,5110,"Železný Brod",20.77,768,"ANO 2011","ANO 2011",0,1
+2013,5201,"Broumov",21.85,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5202,"Dobruška",19.07,768,"ANO 2011","ANO 2011",0,1
+2013,5203,"Dvůr Králové nad Labem",21.39,768,"ANO 2011","ANO 2011",0,1
+2013,5204,"Hořice",23.82,768,"ANO 2011","ANO 2011",0,1
+2013,5205,"Hradec Králové",20.25,768,"ANO 2011","ANO 2011",0,1
+2013,5206,"Jaroměř",20.56,768,"ANO 2011","ANO 2011",0,1
+2013,5207,"Jičín",20.66,768,"ANO 2011","ANO 2011",0,1
+2013,5208,"Kostelec nad Orlicí",19.56,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5209,"Náchod",23.72,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5210,"Nová Paka",19.11,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5211,"Nové Město nad Metují",18.24,768,"ANO 2011","ANO 2011",0,1
+2013,5212,"Nový Bydžov",21.18,768,"ANO 2011","ANO 2011",0,1
+2013,5213,"Rychnov nad Kněžnou",20.32,768,"ANO 2011","ANO 2011",0,1
+2013,5214,"Trutnov",19.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5215,"Vrchlabí",21.2,768,"ANO 2011","ANO 2011",0,1
+2013,5301,"Česká Třebová",25.73,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5302,"Hlinsko",23.77,768,"ANO 2011","ANO 2011",0,1
+2013,5303,"Holice",25.62,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5304,"Chrudim",23.01,768,"ANO 2011","ANO 2011",0,1
+2013,5305,"Králíky",23.89,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5306,"Lanškroun",22.03,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5307,"Litomyšl",16.58,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5308,"Moravská Třebová",28.65,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5309,"Pardubice",22.02,768,"ANO 2011","ANO 2011",0,1
+2013,5310,"Polička",19.98,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5311,"Přelouč",23.29,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5312,"Svitavy",28.85,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5313,"Ústí nad Orlicí",21.58,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,5314,"Vysoké Mýto",17.62,768,"ANO 2011","ANO 2011",0,1
+2013,5315,"Žamberk",18.26,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6101,"Bystřice nad Pernštejnem",30.83,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6102,"Havlíčkův Brod",22,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6103,"Humpolec",25.54,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6104,"Chotěboř",24.87,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6105,"Jihlava",20.78,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6106,"Moravské Budějovice",23.35,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6107,"Náměšť nad Oslavou",23.04,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6108,"Nové Město na Moravě",24.86,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6109,"Pacov",26.98,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6110,"Pelhřimov",26.99,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6111,"Světlá nad Sázavou",22.05,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6112,"Telč",19.37,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6113,"Třebíč",21.31,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6114,"Velké Meziříčí",23.07,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6115,"Žďár nad Sázavou",22.91,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6201,"Blansko",28.89,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6202,"Boskovice",27.77,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6203,"Brno",20.77,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6204,"Břeclav",24.72,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6205,"Bučovice",29.17,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6206,"Hodonín",25.67,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6207,"Hustopeče",22.21,768,"ANO 2011","ANO 2011",0,1
+2013,6208,"Ivančice",23.48,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6209,"Kuřim",22.73,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6210,"Kyjov",20.96,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6211,"Mikulov",22.04,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6212,"Moravský Krumlov",23.91,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6213,"Pohořelice",25.77,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6214,"Rosice",23.16,768,"ANO 2011","ANO 2011",0,1
+2013,6215,"Slavkov u Brna",26.21,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6216,"Šlapanice",18.79,768,"ANO 2011","ANO 2011",0,1
+2013,6217,"Tišnov",23.88,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6218,"Veselí nad Moravou",25.91,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6219,"Vyškov",30.91,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6220,"Znojmo",27.09,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,6221,"Židlochovice",22.27,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7101,"Hranice",19.94,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7102,"Jeseník",24.03,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7103,"Konice",25.38,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7104,"Lipník nad Bečvou",22.76,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7105,"Litovel",26.95,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7106,"Mohelnice",23.45,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7107,"Olomouc",20.94,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7108,"Prostějov",25.51,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7109,"Přerov",23.92,768,"ANO 2011","ANO 2011",0,1
+2013,7110,"Šternberk",22.48,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7111,"Šumperk",24.4,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7112,"Uničov",25.04,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7113,"Zábřeh",22.45,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7201,"Bystřice pod Hostýnem",20.22,792,"Úsvit přímé demokracie Tomia Okamury","Úsvit",0,0
+2013,7202,"Holešov",25.39,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7203,"Kroměříž",21.16,768,"ANO 2011","ANO 2011",0,1
+2013,7204,"Luhačovice",20.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7205,"Otrokovice",24.03,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7206,"Rožnov pod Radhoštěm",20.79,768,"ANO 2011","ANO 2011",0,1
+2013,7207,"Uherské Hradiště",20.03,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7208,"Uherský Brod",21.56,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7209,"Valašské Klobouky",20.24,1,"Křesťan.a demokrat.unie-Českosl.strana lidová","KDU-ČSL",0,1
+2013,7210,"Valašské Meziříčí",25.96,768,"ANO 2011","ANO 2011",0,1
+2013,7211,"Vizovice",18.35,768,"ANO 2011","ANO 2011",0,1
+2013,7212,"Vsetín",20.82,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,7213,"Zlín",20.68,768,"ANO 2011","ANO 2011",0,1
+2013,8101,"Bílovec",23.14,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8102,"Bohumín",35.42,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8103,"Bruntál",24.5,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8104,"Český Těšín",28.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8105,"Frenštát pod Radhoštěm",22.84,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8106,"Frýdek-Místek",26.39,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8107,"Frýdlant nad Ostravicí",23.33,768,"ANO 2011","ANO 2011",0,1
+2013,8108,"Havířov",31.51,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8109,"Hlučín",25.23,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8110,"Jablunkov",26.74,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8111,"Karviná",36.05,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8112,"Kopřivnice",24.99,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8113,"Kravaře",22.28,768,"ANO 2011","ANO 2011",0,1
+2013,8114,"Krnov",26.41,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8115,"Nový Jičín",24.96,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8116,"Odry",24.09,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8117,"Opava",23.29,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8118,"Orlová",31.88,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8119,"Ostrava",25.51,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8120,"Rýmařov",31.27,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8121,"Třinec",31.74,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2013,8122,"Vítkov",24.68,7,"Česká strana sociálně demokratická","ČSSD",1,1
+2017,2101,"Benešov",30.53,768,"ANO 2011","ANO",1,1
+2017,2102,"Beroun",26.8,768,"ANO 2011","ANO",1,1
+2017,2103,"Brandýs nad Labem-Stará Boleslav",26.93,768,"ANO 2011","ANO",1,1
+2017,2104,"Čáslav",29.27,768,"ANO 2011","ANO",1,1
+2017,2105,"Černošice",19.51,721,"TOP 09","TOP 09",0,0
+2017,2106,"Český Brod",26.06,768,"ANO 2011","ANO",1,1
+2017,2107,"Dobříš",26.29,768,"ANO 2011","ANO",1,1
+2017,2108,"Hořovice",27.96,768,"ANO 2011","ANO",1,1
+2017,2109,"Kladno",30.48,768,"ANO 2011","ANO",1,1
+2017,2110,"Kolín",27.09,768,"ANO 2011","ANO",1,1
+2017,2111,"Kralupy nad Vltavou",28.03,768,"ANO 2011","ANO",1,1
+2017,2112,"Kutná Hora",28.22,768,"ANO 2011","ANO",1,1
+2017,2113,"Lysá nad Labem",25.48,768,"ANO 2011","ANO",1,1
+2017,2114,"Mělník",28.61,768,"ANO 2011","ANO",1,1
+2017,2115,"Mladá Boleslav",34.4,768,"ANO 2011","ANO",1,1
+2017,2116,"Mnichovo Hradiště",30.7,768,"ANO 2011","ANO",1,1
+2017,2117,"Neratovice",35.12,768,"ANO 2011","ANO",1,1
+2017,2118,"Nymburk",30.6,768,"ANO 2011","ANO",1,1
+2017,2119,"Poděbrady",26.01,768,"ANO 2011","ANO",1,1
+2017,2120,"Příbram",32.06,768,"ANO 2011","ANO",1,1
+2017,2121,"Rakovník",30.76,768,"ANO 2011","ANO",1,1
+2017,2122,"Říčany",21.53,768,"ANO 2011","ANO",1,1
+2017,2123,"Sedlčany",27.54,768,"ANO 2011","ANO",1,1
+2017,2124,"Slaný",30.72,768,"ANO 2011","ANO",1,1
+2017,2125,"Vlašim",32.98,768,"ANO 2011","ANO",1,1
+2017,2126,"Votice",35.1,768,"ANO 2011","ANO",1,1
+2017,3101,"Blatná",28.12,768,"ANO 2011","ANO",1,1
+2017,3102,"České Budějovice",27.67,768,"ANO 2011","ANO",1,1
+2017,3103,"Český Krumlov",26.14,768,"ANO 2011","ANO",1,1
+2017,3104,"Dačice",25.43,768,"ANO 2011","ANO",1,1
+2017,3105,"Jindřichův Hradec",29.67,768,"ANO 2011","ANO",1,1
+2017,3106,"Kaplice",34.18,768,"ANO 2011","ANO",1,1
+2017,3107,"Milevsko",30.61,768,"ANO 2011","ANO",1,1
+2017,3108,"Písek",26.85,768,"ANO 2011","ANO",1,1
+2017,3109,"Prachatice",25.15,768,"ANO 2011","ANO",1,1
+2017,3110,"Soběslav",31.57,768,"ANO 2011","ANO",1,1
+2017,3111,"Strakonice",32.54,768,"ANO 2011","ANO",1,1
+2017,3112,"Tábor",29.75,768,"ANO 2011","ANO",1,1
+2017,3113,"Trhové Sviny",32.98,768,"ANO 2011","ANO",1,1
+2017,3114,"Třeboň",25.76,768,"ANO 2011","ANO",1,1
+2017,3115,"Týn nad Vltavou",27.16,768,"ANO 2011","ANO",1,1
+2017,3116,"Vimperk",26.45,768,"ANO 2011","ANO",1,1
+2017,3117,"Vodňany",30.84,768,"ANO 2011","ANO",1,1
+2017,3201,"Blovice",28.86,768,"ANO 2011","ANO",1,1
+2017,3202,"Domažlice",26.98,768,"ANO 2011","ANO",1,1
+2017,3203,"Horažďovice",33.42,768,"ANO 2011","ANO",1,1
+2017,3204,"Horšovský Týn",33.49,768,"ANO 2011","ANO",1,1
+2017,3205,"Klatovy",30.84,768,"ANO 2011","ANO",1,1
+2017,3206,"Kralovice",31.78,768,"ANO 2011","ANO",1,1
+2017,3207,"Nepomuk",33.75,768,"ANO 2011","ANO",1,1
+2017,3208,"Nýřany",33.49,768,"ANO 2011","ANO",1,1
+2017,3209,"Plzeň",28.68,768,"ANO 2011","ANO",1,1
+2017,3210,"Přeštice",29.95,768,"ANO 2011","ANO",1,1
+2017,3211,"Rokycany",32.23,768,"ANO 2011","ANO",1,1
+2017,3212,"Stod",36.14,768,"ANO 2011","ANO",1,1
+2017,3213,"Stříbro",34.12,768,"ANO 2011","ANO",1,1
+2017,3214,"Sušice",30.78,768,"ANO 2011","ANO",1,1
+2017,3215,"Tachov",34.04,768,"ANO 2011","ANO",1,1
+2017,4101,"Aš",40.12,768,"ANO 2011","ANO",1,1
+2017,4102,"Cheb",34.46,768,"ANO 2011","ANO",1,1
+2017,4103,"Karlovy Vary",33.3,768,"ANO 2011","ANO",1,1
+2017,4104,"Kraslice",42.05,768,"ANO 2011","ANO",1,1
+2017,4105,"Mariánské Lázně",30.67,768,"ANO 2011","ANO",1,1
+2017,4106,"Ostrov",34.05,768,"ANO 2011","ANO",1,1
+2017,4107,"Sokolov",36.46,768,"ANO 2011","ANO",1,1
+2017,4201,"Bílina",40.68,768,"ANO 2011","ANO",1,1
+2017,4202,"Děčín",38.6,768,"ANO 2011","ANO",1,1
+2017,4203,"Chomutov",38.47,768,"ANO 2011","ANO",1,1
+2017,4204,"Kadaň",40.6,768,"ANO 2011","ANO",1,1
+2017,4205,"Litoměřice",30.4,768,"ANO 2011","ANO",1,1
+2017,4206,"Litvínov",39.31,768,"ANO 2011","ANO",1,1
+2017,4207,"Louny",33.95,768,"ANO 2011","ANO",1,1
+2017,4208,"Lovosice",47.18,768,"ANO 2011","ANO",1,1
+2017,4209,"Most",39.93,768,"ANO 2011","ANO",1,1
+2017,4210,"Podbořany",39.1,768,"ANO 2011","ANO",1,1
+2017,4211,"Roudnice nad Labem",27.35,768,"ANO 2011","ANO",1,1
+2017,4212,"Rumburk",41.92,768,"ANO 2011","ANO",1,1
+2017,4213,"Teplice",37.16,768,"ANO 2011","ANO",1,1
+2017,4214,"Ústí nad Labem",36.37,768,"ANO 2011","ANO",1,1
+2017,4215,"Varnsdorf",39.22,768,"ANO 2011","ANO",1,1
+2017,4216,"Žatec",37.27,768,"ANO 2011","ANO",1,1
+2017,5101,"Česká Lípa",32.69,768,"ANO 2011","ANO",1,1
+2017,5102,"Frýdlant",32.97,768,"ANO 2011","ANO",1,1
+2017,5103,"Jablonec nad Nisou",29.79,768,"ANO 2011","ANO",1,1
+2017,5104,"Jilemnice",26.63,768,"ANO 2011","ANO",1,1
+2017,5105,"Liberec",30.94,768,"ANO 2011","ANO",1,1
+2017,5106,"Nový Bor",31.3,768,"ANO 2011","ANO",1,1
+2017,5107,"Semily",28.09,768,"ANO 2011","ANO",1,1
+2017,5108,"Tanvald",31.3,768,"ANO 2011","ANO",1,1
+2017,5109,"Turnov",23.77,768,"ANO 2011","ANO",1,1
+2017,5110,"Železný Brod",25.73,768,"ANO 2011","ANO",1,1
+2017,5201,"Broumov",34.54,768,"ANO 2011","ANO",1,1
+2017,5202,"Dobruška",33.09,768,"ANO 2011","ANO",1,1
+2017,5203,"Dvůr Králové nad Labem",35.67,768,"ANO 2011","ANO",1,1
+2017,5204,"Hořice",33.87,768,"ANO 2011","ANO",1,1
+2017,5205,"Hradec Králové",29.93,768,"ANO 2011","ANO",1,1
+2017,5206,"Jaroměř",33.11,768,"ANO 2011","ANO",1,1
+2017,5207,"Jičín",31.97,768,"ANO 2011","ANO",1,1
+2017,5208,"Kostelec nad Orlicí",31.79,768,"ANO 2011","ANO",1,1
+2017,5209,"Náchod",30.85,768,"ANO 2011","ANO",1,1
+2017,5210,"Nová Paka",26.84,768,"ANO 2011","ANO",1,1
+2017,5211,"Nové Město nad Metují",29.6,768,"ANO 2011","ANO",1,1
+2017,5212,"Nový Bydžov",33.83,768,"ANO 2011","ANO",1,1
+2017,5213,"Rychnov nad Kněžnou",30.91,768,"ANO 2011","ANO",1,1
+2017,5214,"Trutnov",30.45,768,"ANO 2011","ANO",1,1
+2017,5215,"Vrchlabí",27.26,768,"ANO 2011","ANO",1,1
+2017,5301,"Česká Třebová",32.95,768,"ANO 2011","ANO",1,1
+2017,5302,"Hlinsko",34.26,768,"ANO 2011","ANO",1,1
+2017,5303,"Holice",28.58,768,"ANO 2011","ANO",1,1
+2017,5304,"Chrudim",29.88,768,"ANO 2011","ANO",1,1
+2017,5305,"Králíky",33.98,768,"ANO 2011","ANO",1,1
+2017,5306,"Lanškroun",33.43,768,"ANO 2011","ANO",1,1
+2017,5307,"Litomyšl",24.75,768,"ANO 2011","ANO",1,1
+2017,5308,"Moravská Třebová",31.26,768,"ANO 2011","ANO",1,1
+2017,5309,"Pardubice",31.31,768,"ANO 2011","ANO",1,1
+2017,5310,"Polička",25.3,768,"ANO 2011","ANO",1,1
+2017,5311,"Přelouč",29.51,768,"ANO 2011","ANO",1,1
+2017,5312,"Svitavy",31.18,768,"ANO 2011","ANO",1,1
+2017,5313,"Ústí nad Orlicí",29.63,768,"ANO 2011","ANO",1,1
+2017,5314,"Vysoké Mýto",28.17,768,"ANO 2011","ANO",1,1
+2017,5315,"Žamberk",27.05,768,"ANO 2011","ANO",1,1
+2017,6101,"Bystřice nad Pernštejnem",29.16,768,"ANO 2011","ANO",1,1
+2017,6102,"Havlíčkův Brod",29.15,768,"ANO 2011","ANO",1,1
+2017,6103,"Humpolec",28.68,768,"ANO 2011","ANO",1,1
+2017,6104,"Chotěboř",30.27,768,"ANO 2011","ANO",1,1
+2017,6105,"Jihlava",28.25,768,"ANO 2011","ANO",1,1
+2017,6106,"Moravské Budějovice",26.37,768,"ANO 2011","ANO",1,1
+2017,6107,"Náměšť nad Oslavou",31.92,768,"ANO 2011","ANO",1,1
+2017,6108,"Nové Město na Moravě",25.67,768,"ANO 2011","ANO",1,1
+2017,6109,"Pacov",24.78,768,"ANO 2011","ANO",1,1
+2017,6110,"Pelhřimov",27.06,768,"ANO 2011","ANO",1,1
+2017,6111,"Světlá nad Sázavou",34.2,768,"ANO 2011","ANO",1,1
+2017,6112,"Telč",22.98,768,"ANO 2011","ANO",1,1
+2017,6113,"Třebíč",29.06,768,"ANO 2011","ANO",1,1
+2017,6114,"Velké Meziříčí",26.96,768,"ANO 2011","ANO",1,1
+2017,6115,"Žďár nad Sázavou",29.69,768,"ANO 2011","ANO",1,1
+2017,6201,"Blansko",26.36,768,"ANO 2011","ANO",1,1
+2017,6202,"Boskovice",25.98,768,"ANO 2011","ANO",1,1
+2017,6203,"Brno",24.55,768,"ANO 2011","ANO",1,1
+2017,6204,"Břeclav",31.59,768,"ANO 2011","ANO",1,1
+2017,6205,"Bučovice",24.71,768,"ANO 2011","ANO",1,1
+2017,6206,"Hodonín",31.37,768,"ANO 2011","ANO",1,1
+2017,6207,"Hustopeče",32.87,768,"ANO 2011","ANO",1,1
+2017,6208,"Ivančice",30.65,768,"ANO 2011","ANO",1,1
+2017,6209,"Kuřim",25.64,768,"ANO 2011","ANO",1,1
+2017,6210,"Kyjov",28.96,768,"ANO 2011","ANO",1,1
+2017,6211,"Mikulov",26.67,768,"ANO 2011","ANO",1,1
+2017,6212,"Moravský Krumlov",31.57,768,"ANO 2011","ANO",1,1
+2017,6213,"Pohořelice",36.49,768,"ANO 2011","ANO",1,1
+2017,6214,"Rosice",29.9,768,"ANO 2011","ANO",1,1
+2017,6215,"Slavkov u Brna",19.89,768,"ANO 2011","ANO",1,1
+2017,6216,"Šlapanice",24.62,768,"ANO 2011","ANO",1,1
+2017,6217,"Tišnov",26.93,768,"ANO 2011","ANO",1,1
+2017,6218,"Veselí nad Moravou",29.73,768,"ANO 2011","ANO",1,1
+2017,6219,"Vyškov",26.56,768,"ANO 2011","ANO",1,1
+2017,6220,"Znojmo",31.04,768,"ANO 2011","ANO",1,1
+2017,6221,"Židlochovice",28.31,768,"ANO 2011","ANO",1,1
+2017,7101,"Hranice",31.36,768,"ANO 2011","ANO",1,1
+2017,7102,"Jeseník",31.56,768,"ANO 2011","ANO",1,1
+2017,7103,"Konice",20.47,768,"ANO 2011","ANO",1,1
+2017,7104,"Lipník nad Bečvou",31.64,768,"ANO 2011","ANO",1,1
+2017,7105,"Litovel",31.77,768,"ANO 2011","ANO",1,1
+2017,7106,"Mohelnice",33.31,768,"ANO 2011","ANO",1,1
+2017,7107,"Olomouc",28.18,768,"ANO 2011","ANO",1,1
+2017,7108,"Prostějov",30.19,768,"ANO 2011","ANO",1,1
+2017,7109,"Přerov",33.92,768,"ANO 2011","ANO",1,1
+2017,7110,"Šternberk",31.75,768,"ANO 2011","ANO",1,1
+2017,7111,"Šumperk",31.89,768,"ANO 2011","ANO",1,1
+2017,7112,"Uničov",33.38,768,"ANO 2011","ANO",1,1
+2017,7113,"Zábřeh",32.51,768,"ANO 2011","ANO",1,1
+2017,7201,"Bystřice pod Hostýnem",30.07,768,"ANO 2011","ANO",1,1
+2017,7202,"Holešov",28.71,768,"ANO 2011","ANO",1,1
+2017,7203,"Kroměříž",30.09,768,"ANO 2011","ANO",1,1
+2017,7204,"Luhačovice",29.08,768,"ANO 2011","ANO",1,1
+2017,7205,"Otrokovice",33.97,768,"ANO 2011","ANO",1,1
+2017,7206,"Rožnov pod Radhoštěm",30.31,768,"ANO 2011","ANO",1,1
+2017,7207,"Uherské Hradiště",24.53,768,"ANO 2011","ANO",1,1
+2017,7208,"Uherský Brod",25.32,768,"ANO 2011","ANO",1,1
+2017,7209,"Valašské Klobouky",26.07,768,"ANO 2011","ANO",1,1
+2017,7210,"Valašské Meziříčí",34.33,768,"ANO 2011","ANO",1,1
+2017,7211,"Vizovice",25.66,768,"ANO 2011","ANO",1,1
+2017,7212,"Vsetín",25.48,768,"ANO 2011","ANO",1,1
+2017,7213,"Zlín",29.98,768,"ANO 2011","ANO",1,1
+2017,8101,"Bílovec",34.3,768,"ANO 2011","ANO",1,1
+2017,8102,"Bohumín",35.18,768,"ANO 2011","ANO",1,1
+2017,8103,"Bruntál",36.06,768,"ANO 2011","ANO",1,1
+2017,8104,"Český Těšín",34.71,768,"ANO 2011","ANO",1,1
+2017,8105,"Frenštát pod Radhoštěm",33.65,768,"ANO 2011","ANO",1,1
+2017,8106,"Frýdek-Místek",35.65,768,"ANO 2011","ANO",1,1
+2017,8107,"Frýdlant nad Ostravicí",34.58,768,"ANO 2011","ANO",1,1
+2017,8108,"Havířov",36.83,768,"ANO 2011","ANO",1,1
+2017,8109,"Hlučín",36.5,768,"ANO 2011","ANO",1,1
+2017,8110,"Jablunkov",26.74,768,"ANO 2011","ANO",1,1
+2017,8111,"Karviná",40.07,768,"ANO 2011","ANO",1,1
+2017,8112,"Kopřivnice",32.77,768,"ANO 2011","ANO",1,1
+2017,8113,"Kravaře",33.51,768,"ANO 2011","ANO",1,1
+2017,8114,"Krnov",36.05,768,"ANO 2011","ANO",1,1
+2017,8115,"Nový Jičín",33.06,768,"ANO 2011","ANO",1,1
+2017,8116,"Odry",35.7,768,"ANO 2011","ANO",1,1
+2017,8117,"Opava",32,768,"ANO 2011","ANO",1,1
+2017,8118,"Orlová",41.31,768,"ANO 2011","ANO",1,1
+2017,8119,"Ostrava",35.42,768,"ANO 2011","ANO",1,1
+2017,8120,"Rýmařov",35.36,768,"ANO 2011","ANO",1,1
+2017,8121,"Třinec",37.14,768,"ANO 2011","ANO",1,1
+2017,8122,"Vítkov",40.66,768,"ANO 2011","ANO",1,1

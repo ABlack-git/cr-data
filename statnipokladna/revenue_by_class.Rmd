@@ -1,0 +1,25 @@
+---
+title: "Untitled"
+output: html_document
+date: "2022-12-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+revenue_2007_2020 <- read_csv("Desktop/cr-data/statnipokladna/revenue_2007_2020.csv")
+revenue_2007_2020<- revenue_2007_2020[,c(2:5)]
+```
+
+```{r}
+library(tidyr)
+library(dplyr)
+revenue_by_class <- spread(revenue_2007_2020, class_of_revenue, Revenue_CZK)
+revenue_by_class <- revenue_by_class %>% rename("Tax_revenue_CZK"="Daňové příjmy", "Non_tax_revenue_CZK"="Nedaňové příjmy", "Capital_revenue_CZK"="Kapitálové příjmy")
+```
+```{r}
+write.csv(revenue_by_class,"~/Desktop/cr-data/statnipokladna/revenue_by_class.csv", row.names=FALSE)
+```

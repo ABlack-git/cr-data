@@ -1,0 +1,34 @@
+---
+title: "balance_sheet"
+output: html_document
+date: "2022-12-10"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(dplyr)
+library(statnipokladna)
+cz_codes <- read.csv("../municipality_codes/cz-structure-enriched.csv", colClasses = c("ico"="character"))
+icos <- cz_codes$ico
+```
+
+```{r}
+balance_sheet <- sp_get_table("balance-sheet", seq(2010,2020), ico=icos)
+balance_sheet <- balance_sheet %>% mutate(vykaz_date=sprintf("%s-%s-31", vykaz_year, vykaz_month))
+cats <- sp_get_codelist("polvyk")
+balance_sheet <- balance_sheet %>% sp_add_codelist(cats) %>% sp_add_codelist("polvyk")
+lt_tangible_assets <- balance_sheet %>% filter(polvyk == "A.II.")
+lt_tangible_assets <- lt_tangible_assets[,c("vykaz_year","ico", "current_net")]
+lt_tangible_assets_2010_2020 <-  lt_tangible_assets %>% rename("year"="vykaz_year",
+                                                     "lg_tangible_assets_CZK"="current_net")
+```
+
+```{r}
+write.csv(lt_tangible_assets_2010_2020,"~/Desktop/cr-data/statnipokladna/lt_tangible_assets_10_20.csv", row.names=FALSE)
+
+```
+
+

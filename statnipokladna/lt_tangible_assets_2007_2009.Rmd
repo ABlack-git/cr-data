@@ -1,0 +1,40 @@
+---
+title: "lt_tangible_assets_2007_2009"
+output: html_document
+date: "2022-12-13"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readxl)
+library(readr)
+library(dplyr)
+dhm_celkem_2007 <- read_excel("Desktop/cr-data/statnipokladna/row data/dhm_celkem_2007.xls")
+dhm_celkem_2008 <- read_excel("Desktop/cr-data/statnipokladna/row data/dhm_celkem_2008.xls")
+dhm_celkem_2009 <- read_excel("Desktop/cr-data/statnipokladna/row data/dhm_celkem_2009.xls")
+cz_structure_enriched <- read_csv("Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
+```
+
+```{r}
+dhm_celkem_2007_filtered <- dhm_celkem_2007 %>% filter(dhm_celkem_2007$`IČ (kód)` %in% cz_structure_enriched$ico)
+dhm_celkem_2008_filtered <- dhm_celkem_2008 %>% filter(dhm_celkem_2008$`IČ (kód)` %in% cz_structure_enriched$ico)
+dhm_celkem_2009_filtered <- dhm_celkem_2009 %>% filter(dhm_celkem_2009$`IČ (kód)` %in% cz_structure_enriched$ico)
+```
+
+```{r}
+dhm_celkem_2007_filtered <- dhm_celkem_2007_filtered %>% rename("ico"="IČ (kód)","year"="Obdobi (kód)", "lt_tangible_assets_CZK"="Stav k")
+dhm_celkem_2008_filtered <- dhm_celkem_2008_filtered %>% rename("ico"="IČ (kód)","year"="Obdobi (kód)", "lt_tangible_assets_CZK"="Stav k")
+dhm_celkem_2009_filtered <- dhm_celkem_2009_filtered %>% rename("ico"="IČ (kód)","year"="Obdobi (kód)", "lt_tangible_assets_CZK"="Stav k")
+```
+
+```{r}
+lt_tangible_assets_2007 <- dhm_celkem_2007_filtered[,c("ico", "year", "lt_tangible_assets_CZK")]
+lt_tangible_assets_2008 <- dhm_celkem_2008_filtered[,c("ico", "year", "lt_tangible_assets_CZK")]
+lt_tangible_assets_2009 <- dhm_celkem_2009_filtered[,c("ico", "year", "lt_tangible_assets_CZK")]
+lt_tangible_assets_2007_2009 <- rbind(lt_tangible_assets_2007,lt_tangible_assets_2008,lt_tangible_assets_2009)
+
+write.csv(lt_tangible_assets_2007_2009,"~/Desktop/cr-data/statnipokladna/lt_tangible_assets_2007_2009.csv", row.names=FALSE)
+```
