@@ -1,0 +1,29 @@
+---
+title: "saldo_2007_2020"
+output: html_document
+date: "2022-12-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r}
+saldo_2007 <- read.csv("Desktop/cr-data/statnipokladna/saldo_2007_2009.csv", colClasses = c("year"="character"))
+saldo_2010 <- read.csv("Desktop/cr-data/statnipokladna/saldo_2010_2020.csv", colClasses = c("year"="character"))
+```
+
+```{r}
+saldo_2007$year <- as.Date(paste(saldo_2007$year, "/01", sep=""), format="%Y/%m/%d")
+saldo_2007$year<- format(saldo_2007$year, "%Y")
+```
+
+```{r}
+saldo_2010 <- saldo_2010[,c(2,1,5)]
+saldo_2010 <- saldo_2010%>%rename("Saldo_CZK"="saldo")
+merged <- rbind(saldo_2007, saldo_2010)
+merged$year <- sapply(merged$year, as.numeric)
+```
+
+```{r}
+write.csv(merged, "Desktop/cr-data/statnipokladna/saldo_2007_2020.csv")
+```

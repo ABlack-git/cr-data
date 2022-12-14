@@ -1,0 +1,13 @@
+---
+title: "population"
+output: html_document
+date: "2022-12-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+population <- read_csv('population_by_regions.csv')
+```

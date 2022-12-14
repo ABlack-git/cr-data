@@ -9,8 +9,9 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-assets_2007 <- read.csv("Desktop/cr-data/statnipokladna/lt_tangible_assets_2007_2009.csv", colClasses = c("year"="character"))
-assets_2010 <- read.csv("Desktop/cr-data/statnipokladna/lt_tangible_assets_10_20.csv", colClasses = c("year"="character"))
+library(readr)
+assets_2007 <- read.csv("~/Desktop/cr-data/statnipokladna/lt_tangible_assets_2007_2009.csv", colClasses = c("year"="character"))
+assets_2010 <- read.csv("~/Desktop/cr-data/statnipokladna/lt_tangible_assets_10_20.csv", colClasses = c("year"="character"))
 ```
 
 ```{r}
@@ -19,6 +20,7 @@ assets_2007$year<- format(assets_2007$year, "%Y")
 ```
 
 ```{r}
+library(dplyr)
 assets_2007 <- assets_2007[,c(2,1,3)]
 assets_2010 <- assets_2010%>%rename("lt_tangible_assets_CZK"="lg_tangible_assets_CZK")
 merged <- rbind(assets_2007, assets_2010)
