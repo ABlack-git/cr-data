@@ -1,0 +1,41 @@
+---
+title: "saldo_2007_2009"
+output: html_document
+date: "2022-12-14"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readxl)
+library(readr)
+saldo2007 <- read_excel("Desktop/cr-data/statnipokladna/row data/saldo2007.xls")
+saldo2008 <- read_excel("Desktop/cr-data/statnipokladna/row data/saldo2008.xls")
+saldo2009 <- read_excel("Desktop/cr-data/statnipokladna/row data/saldo2009.xls")
+cz_structure_enriched <- read_csv("Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
+```
+
+Filter municipality with extented power 
+```{r}
+library(dplyr)
+saldo2007_filtered <- saldo2007 %>% filter(saldo2007$`IČ (kód)` %in% cz_structure_enriched$ico)
+saldo2008_filtered <- saldo2008 %>% filter(saldo2008$`IČ (kód)` %in% cz_structure_enriched$ico)
+saldo2009_filtered <- saldo2009 %>% filter(saldo2009$`IČ (kód)` %in% cz_structure_enriched$ico)
+```
+
+
+
+```{r}
+saldo_archiv_2007_2009 <- rbind(saldo2007_filtered, saldo2008_filtered, saldo2009_filtered)
+saldo_archiv_2007_2009 <- saldo_archiv_2007_2009[,c(3,4,7)]
+saldo_archiv_2007_2009 <- saldo_archiv_2007_2009 %>% rename("ico"="IČ (kód)",
+                                                              "year"="Obdobi (kód)",
+                                                              "Saldo_CZK"="Výsledek od počátku roku")
+```
+
+Rename and save
+```{r}
+write.csv(saldo_archiv_2007_2009,"~/Desktop/cr-data/statnipokladna/saldo_2007_2009.csv", row.names=FALSE)
+```
