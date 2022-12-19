@@ -26,7 +26,7 @@ funds_2013_2020_sum <- funds_2013_2020_sum %>% filter(year<2021) %>% rename("ico
 ```
 
 ```{r}
-cz_structure_enriched <- read_csv("Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
+cz_structure_enriched <- read_csv("~/Desktop/cr-data/municipality_codes/cz-structure-enriched.csv")
 cz_ico_id <- cz_structure_enriched[,c("ico","municipality_id","municipality")]
 funds_merged <- inner_join(funds_2013_2020_sum, cz_ico_id, by="ico") %>% ungroup()
 ```
@@ -34,4 +34,5 @@ funds_merged <- inner_join(funds_2013_2020_sum, cz_ico_id, by="ico") %>% ungroup
 ```{r}
 write.csv(funds_merged,"~/Desktop/cr-data/eu_funds/funds_merged.csv", row.names=FALSE)
 ```
+
 

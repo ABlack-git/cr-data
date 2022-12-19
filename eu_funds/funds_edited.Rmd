@@ -17,11 +17,12 @@ library(dplyr)
 funds_2013_grouped <- read_csv("Desktop/cr-data/eu_funds/funds_2013_grouped.csv")
 funds_2020_grouped <- read_csv("Desktop/cr-data/eu_funds/funds_2020_grouped.csv")
 
-funds_2013_edited <- funds_2013_grouped[,-c(1,4,5,6,9,10)]%>%rename("ID_municipality"="IČ.žadatele",
+funds_2013_edited <- funds_2013_grouped%>%rename("ID_municipality"="IČ.žadatele",
  "Grant_amount_total_CZK"="Proplacené.prostředky.příjemcům...vyúčtované..veřejné.prostředky.celkem.",
  "Grant_amount_EU_CZK"="Proplacené.prostředky.příjemcům...vyúčtované..EU.zdroje.")
 
-funds_2020_edited <- funds_2020_grouped[,-c(1,4,6,7,8)]%>%rename("ID_municipality"="Identification.number.of.the.beneficiary", 
+
+funds_2020_edited <- funds_2020_grouped%>%rename("ID_municipality"="Identification.number.of.the.beneficiary", 
  "Grant_amount_total_CZK" = "Total.eligible.expenditures.charged.in.payment.applications",
 "Grant_amount_EU_CZK"= "Expenditures.charged.in.payment.application...Union.support")
 
