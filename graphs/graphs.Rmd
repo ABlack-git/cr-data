@@ -1,0 +1,205 @@
+---
+title: "Graphs"
+output: html_document
+date: "2022-12-16"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(RColorBrewer)
+library(egg)
+library(tidyr)
+```
+
+Load data and rename columns for convenience + remove year 2007 where no eu_funds were distributed. Also transform eu funds to millions.
+```{r}
+data <- read.csv("../data_for_model/dataset.csv")
+
+data <- data %>% rename("tax_revenue"="Tax_revenue_CZK", "capital_revenue"="Capital_revenue_CZK", "non_tax_revenue"="Non_tax_revenue_CZK", "tangible_assets"="lt_tangible_assets_CZK", "saldo"="Saldo_CZK", "eu_funds"="EU_fund_total_CZK")
+
+data$year <- as.factor(data$year)
+data <- data %>% filter(year!=2007)
+
+data <- data %>% mutate(eu_funds_mlns=eu_funds/1e6)
+```
+
+```{r}
+seq_pallete_name <- "OrRd"
+seq_palete <- brewer.pal(9, seq_pallete_name)
+fill_color <- seq_palete[5]
+border_color <- seq_palete[9]
+alpha_lvl <- 0.8
+
+cat_pallet <- "Set2"
+```
+
+Total EU grands for municipalities by years
+```{r}
+sum_by_year <- data %>% group_by(year) %>% summarise(eu_funds_sum_billions=sum(eu_funds)/1e9)
+ggplot(sum_by_year, aes(x=year, y=eu_funds_sum_billions)) +
+  geom_bar(stat = "identity", color=border_color, fill=fill_color, alpha=alpha_lvl) +
+  ggtitle("Total amount of EU grants recieved by municipalities between 2008 and 2020") +
+  xlab("Year") +
+  ylab("EU grants in billions of CZK") +
+  theme_light() +
+  theme(plot.title = element_text(hjust = 0.5))
+
+```
+
+Remove outliers and zeros for better visualization. Outliers removed using inter quartile range.
+```{r}
+q <- quantile(data$eu_funds_mlns, probs = c(0.25, 0.75))
+iqr <- IQR(data$eu_funds_mlns)
+
+low <- q[1]-1.5*iqr
+up <- q[2]+1.5*iqr
+
+data_wo_outliers <- data %>% filter(eu_funds_mlns < up)
+```
+
+Visualising data without outliers
+```{r}
+histogram <- ggplot(data_wo_outliers, aes(x = eu_funds_mlns)) +
+  geom_histogram(
+    binwidth = 5,
+    boundary = 5,
+    color = border_color,
+    fill = fill_color,
+    alpha = alpha_lvl,
+    aes(y = after_stat(count / sum(count)))
+  ) +
+  scale_x_continuous(n.breaks = 12) +
+  coord_cartesian(xlim = c(0, up * 1.1)) +
+  xlab("EU grants in millions of CZK") +
+  ylab("Relative frequency") +
+  theme_light()
+
+boxplot <- ggplot(data, aes(x = eu_funds_mlns)) +
+  geom_boxplot(outlier.shape = NA, fill = fill_color, alpha=alpha_lvl) +
+  scale_x_continuous(n.breaks = 12) +
+  coord_cartesian(xlim = c(0, up * 1.1)) +
+  xlab("EU grants in millions of CZK") +
+  theme_light() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+
+ggarrange(histogram, boxplot, heights = 2:1, top = "Distribution of EU grants")
+```
+
+```{r}
+ggplot(data_wo_outliers, aes(x=eu_funds_mlns, y=year)) +
+  geom_boxplot(outlier.shape = NA, fill=fill_color, alpha=alpha_lvl) +
+  scale_x_continuous(n.breaks = 12) +
+  xlab("EU grants in millions of CZK") +
+  ylab("Year") +
+  ggtitle("Distribution of EU funds by years") +
+  theme_light() +
+  theme(plot.title = element_text(hjust = 0.5))
+  
+```
+```{r}
+data_per_capita <- read_csv("../data_for_model/data_per_capita.csv")
+data_per_capita <- data_per_capita %>% rename("tax_revenue"="Tax_revenue_CZK", "capital_revenue"="Capital_revenue_CZK", "non_tax_revenue"="Non_tax_revenue_CZK", "tangible_assets"="lt_tangible_assets_CZK", "saldo"="Saldo_CZK", "eu_funds"="EU_fund_total_CZK")
+
+data_per_capita$year <- as.factor(data_per_capita$year)
+data_per_capita <- data_per_capita %>% filter(year!=2007)
+```
+
+```{r}
+q_pc <- quantile(data_per_capita$eu_funds, probs = c(0.25, 0.75))
+iqr_pc <- IQR(data_per_capita$eu_funds)
+
+low_pc <- q_pc[1]-1.5*iqr_pc
+up_pc <- q_pc[2]+1.5*iqr_pc
+
+data_pc_wo_outliers <- data_per_capita %>% filter(eu_funds < up_pc)
+```
+
+```{r}
+histogram_pc <- ggplot(data_pc_wo_outliers, aes(x = eu_funds)) +
+  geom_histogram(
+    binwidth = 100,
+    boundary = 100,
+    color = border_color,
+    fill = fill_color,
+    alpha = alpha_lvl,
+    aes(y = after_stat(count / sum(count)))
+  ) +
+  scale_x_continuous(n.breaks = 12) +
+  coord_cartesian(xlim = c(0, up_pc * 1.1)) +
+  xlab("EU grants per capita in CZK") +
+  ylab("Relative frequency") +
+  theme_light()
+
+boxplot_pc <- ggplot(data_per_capita, aes(x = eu_funds)) +
+  geom_boxplot(outlier.shape = NA, fill = fill_color, alpha=alpha_lvl) +
+  scale_x_continuous(n.breaks = 12) +
+  coord_cartesian(xlim = c(0, up_pc * 1.1)) +
+  xlab("EU grants per capita in CZK") +
+  theme_light() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+
+ggarrange(histogram_pc, boxplot_pc, heights = 2:1, top = "Distribution of EU grants per capita")
+
+```
+
+```{r}
+data_rev_long <- data %>% pivot_longer(cols=c(tax_revenue, capital_revenue, non_tax_revenue), names_to = "revenue_type", values_to = "revenue")
+rev_sum_by_year <- data_rev_long %>% group_by(year, revenue_type) %>% summarise(revenue_sum=sum(revenue)/1e9)
+```
+
+```{r}
+ggplot(rev_sum_by_year, aes(x = year, y = revenue_sum)) +
+  geom_bar(aes(fill = revenue_type), stat = "identity", alpha = alpha_lvl) +
+  scale_fill_brewer(
+    palette = cat_pallet,
+    name = "Revenue Type",
+    labels = c("Capital Revenue", "Non Tax Revenue", "Tax Revenue")
+  ) +
+  xlab("Year") +
+  ylab("Total revenue in billions of CZK") +
+  ggtitle("Total revenue of municipalities by year") +
+  theme_light() +
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r}
+data_avg_rev <- data_rev_long %>% group_by(municipality, ico, year) %>%
+  summarise(total_rev = sum(revenue)) %>% group_by(municipality, ico) %>%
+  summarise(average_rev = mean(total_rev) / 1e6)
+
+q_avg_r <- quantile(data_avg_rev$average_rev, probs = c(0.25, 0.75))
+iqr_avg_r <- IQR(data_avg_rev$average_rev)
+low_avg_r <- q_avg_r[1] - 1.5 * iqr_avg_r
+up_avg_r <- q_avg_r[2] + 1.5 * iqr_avg_r
+
+data_avg_rev_wo_outliers <- data_avg_rev %>% filter(average_rev < up_avg_r)
+```
+
+```{r}
+hist_avg_rev <- ggplot(data_avg_rev_wo_outliers, aes(x = average_rev)) +
+  geom_histogram(
+    binwidth = 25,
+    boundry = 25,
+    color = border_color,
+    fill = fill_color,
+    alpha = alpha_lvl,
+    aes(y = after_stat(count / sum(count)))
+  ) +
+  xlab("Municipality revenue in millions of CZK") +
+  ylab("Relative frequency") +
+  coord_cartesian(xlim = c(0, up_avg_r * 1.1)) +
+  scale_x_continuous(n.breaks = 10) +
+  theme_light()
+
+boxpl_avg_rev <- ggplot(data_avg_rev, aes(x = average_rev)) +
+  geom_boxplot(outlier.shape = NA, fill=fill_color, alpha=alpha_lvl) +
+  coord_cartesian(xlim = c(0, up_avg_r * 1.1)) +
+  scale_x_continuous(n.breaks = 10) +
+  xlab("Municipality revenue in millions of CZK") +
+  theme_light() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+
+ggarrange(hist_avg_rev, boxpl_avg_rev, heights = 2:1, top = "Distribution of municipalities by revenue")
+```
