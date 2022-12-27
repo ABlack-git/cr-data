@@ -164,6 +164,8 @@ ggplot(rev_sum_by_year, aes(x = year, y = revenue_sum)) +
   ggtitle("Total revenue of municipalities by year") +
   theme_light() +
   theme(plot.title = element_text(hjust = 0.5))
+
+ggsave("total_revenue_by_years.png")
 ```
 
 ```{r}
