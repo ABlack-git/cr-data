@@ -11,36 +11,58 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(readr)
 library(dplyr)
-elections <- read_csv("~/Desktop/cr-data/elections/elections2.csv")
+```
+
+```{r}
+election_winners <- list('y2006'='ODS', 'y2010'='ČSSD', 'y2013'='ČSSD', 'y2017'='ANO')
+coalitions <- list('y2006'=c('ODS','KDU-ČSL','SZ') , 'y2010'=c('ODS','TOP 09','VV') , 'y2013'=c('ČSSD','ANO 2011','KDU-ČSL'), 'y2017'=c('ANO','ČSSD') )
+parties_in_parlament <- list('y2006'=c('ODS','KDU-ČSL','SZ', 'ČSSD') , 'y2010'=c('ODS','TOP 09','VV', 'ČSSD', 'KSČM') , 'y2013'=c('ČSSD', 'ANO 2011', 'KDU-ČSL', 'KSČM', 'TOP 09', 'ODS', 'Úsvit'), 'y2017'=c('ČSSD', 'ANO', 'KDU-ČSL', 'KSČM', 'TOP 09', 'ODS', 'SPD', 'STAN', 'Piráti') )
+```
+
+```{r}
+elections <- read.csv("elections2.csv")
+elections <- elections[order(elections$year, elections$municipality_id, elections$vote_percentage), ]
+elections <- elections %>% 
+  mutate(is_winer = case_when (year == '2006'& party_name_short =='ODS' ~1,
+                            year == '2010'& party_name_short =='ČSSD' ~1,
+                            year == '2013'& party_name_short =='ČSSD' ~1,
+                            year == '2017'& party_name_short =='ANO' ~1,
+                            TRUE ~ 0)) %>% 
+  mutate(is_coallition = case_when(year=='2006' & party_name_short %in% coalitions$y2006 ~ 1,
+                               year == '2010' & party_name_short %in% coalitions$y2010 ~ 1,
+                               year == '2013' & party_name_short %in% coalitions$y2013 ~ 1,
+                               year == '2017' & party_name_short %in% coalitions$y2017 ~ 1,
+                               TRUE ~ 0)) %>%
+  mutate(is_in_parlament = case_when(year=='2006' & party_name_short %in% parties_in_parlament$y2006 ~ 1,
+                               year == '2010' & party_name_short %in% parties_in_parlament$y2010 ~ 1,
+                               year == '2013' & party_name_short %in% parties_in_parlament$y2013 ~ 1,
+                               year == '2017' & party_name_short %in% parties_in_parlament$y2017 ~ 1,
+                               TRUE ~ 0)) %>%
+  filter(is_in_parlament==1) %>%
+  ungroup()                                     
+
+elections_max <- elections %>% group_by(year, municipality_id) %>% mutate(total_votes = sum(vote_percentage)) %>%
+  mutate(vote_percentage_adj=vote_percentage/total_votes*100) %>% filter(vote_percentage==max(vote_percentage))
+
+vote_percentage_coalition <- elections %>% group_by(year, municipality_id, is_coallition) %>% summarise(coalition_vote_percentage=sum(vote_percentage)) %>% group_by(year, municipality_id) %>% mutate(total_votes=sum(coalition_vote_percentage)) %>% mutate(coalition_vote_percentage_adj=coalition_vote_percentage/total_votes*100)
+
+vote_percentage_coalition <- vote_percentage_coalition %>% filter(is_coallition==1) %>% select(-c(is_coallition, total_votes)) %>% ungroup() %>% mutate(is_coalition_won=case_when(coalition_vote_percentage_adj >= 50 ~ 1, TRUE ~ 0)) 
+
+elections_with_coaltion <- merge(x=elections_max, y=vote_percentage_coalition, by=c('year', 'municipality_id')) %>% select(-c(is_in_parlament, total_votes)) %>% rename(winner_vote_percentage=vote_percentage, winner_vote_percentage_adj=vote_percentage_adj, is_overall_winner=is_winer, is_winner_in_coalition=is_coallition)
 ```
 
 
 ```{r}
-elections <- elections[order(elections$year, elections$municipality_id, elections$vote_percentage), ]
-str(elections)
-summary(elections)
-a<-distinct(elections,municipality_name)
-elections_major <- elections %>% group_by(municipality_id, year)%>% filter(vote_percentage == max(vote_percentage))
-elections_with_dummy <- elections_major %>% mutate(winer = case_when (year == '2006'& party_name_short =='ODS' ~1,
-                                                                      year == '2010'& party_name_short =='ČSSD' ~1,
-                                                                      year == '2013'& party_name_short =='ČSSD' ~1,
-                                                                      year == '2017'& party_name_short =='ANO' ~1,
-                                                                      TRUE ~ 0)) %>% mutate(coallition = case_when(year=='2006'&(party_name_short=='ODS'|party_name_short== 'KDU-ČSL'|party_name_short == 'SZ')~1,
-   year == '2010'& (party_name_short =='ODS'|party_name_short == 'TOP 09'|party_name_short == 'VV')~1,
-   year == '2013'& (party_name_short =='ČSSD'|party_name_short == 'ANO 2011'|party_name_short == 'KDU-ČSL')~1,
-   year == '2017'& (party_name_short =='ANO'|party_name_short =='ČSSD')~1,
-   TRUE ~ 0))%>%ungroup()                                     
+write.csv(elections_with_coaltion,"election_with_coalition.csv", row.names=FALSE)
+```
+
+```{r}
 distinct_munic_2006<- elections_with_dummy%>%filter(year == '2006')%>% distinct( municipality_id)
 distinct_munic_2010<- elections_with_dummy%>%filter(year == '2010')%>% distinct( municipality_id)
 distinct_munic_2013<- elections_with_dummy%>%filter(year == '2013')%>% distinct( municipality_id)
 distinct_munic_2017<- elections_with_dummy%>%filter(year == '2017')%>% distinct( municipality_id)
 merge <- anti_join(cz_ico_id, distinct_munic_2006, by = "municipality_id")
-```
-Save file
 
-```{r}
-write.csv(elections_with_dummy,"~/Desktop/cr-data/elections/election_with_dummy.csv", row.names=FALSE)
 write.csv(merge,"~/Desktop/election_2006.csv", row.names=FALSE)
 ```
-
 

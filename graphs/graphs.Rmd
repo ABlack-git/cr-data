@@ -20,6 +20,7 @@ data <- read.csv("../data_for_model/dataset.csv")
 data <- data %>% rename("tax_revenue"="Tax_revenue_CZK", "capital_revenue"="Capital_revenue_CZK", "non_tax_revenue"="Non_tax_revenue_CZK", "tangible_assets"="lt_tangible_assets_CZK", "saldo"="Saldo_CZK", "eu_funds"="EU_fund_total_CZK")
 
 data$year <- as.factor(data$year)
+data_w_2007 <- data
 data <- data %>% filter(year!=2007)
 
 data <- data %>% mutate(eu_funds_mlns=eu_funds/1e6)
@@ -33,6 +34,7 @@ border_color <- seq_palete[9]
 alpha_lvl <- 0.8
 
 cat_pallet <- "Set2"
+cat_pallet_colors <- brewer.pal(9, cat_pallet)
 ```
 
 Total EU grands for municipalities by years
@@ -99,7 +101,7 @@ ggplot(data_wo_outliers, aes(x=eu_funds_mlns, y=year)) +
   
 ```
 ```{r}
-data_per_capita <- read_csv("../data_for_model/data_per_capita.csv")
+data_per_capita <- read.csv("../data_for_model/data_per_capita.csv")
 data_per_capita <- data_per_capita %>% rename("tax_revenue"="Tax_revenue_CZK", "capital_revenue"="Capital_revenue_CZK", "non_tax_revenue"="Non_tax_revenue_CZK", "tangible_assets"="lt_tangible_assets_CZK", "saldo"="Saldo_CZK", "eu_funds"="EU_fund_total_CZK")
 
 data_per_capita$year <- as.factor(data_per_capita$year)
@@ -145,7 +147,7 @@ ggarrange(histogram_pc, boxplot_pc, heights = 2:1, top = "Distribution of EU gra
 ```
 
 ```{r}
-data_rev_long <- data %>% pivot_longer(cols=c(tax_revenue, capital_revenue, non_tax_revenue), names_to = "revenue_type", values_to = "revenue")
+data_rev_long <- data_w_2007 %>% pivot_longer(cols=c(tax_revenue, capital_revenue, non_tax_revenue), names_to = "revenue_type", values_to = "revenue")
 rev_sum_by_year <- data_rev_long %>% group_by(year, revenue_type) %>% summarise(revenue_sum=sum(revenue)/1e9)
 ```
 
@@ -181,7 +183,7 @@ data_avg_rev_wo_outliers <- data_avg_rev %>% filter(average_rev < up_avg_r)
 hist_avg_rev <- ggplot(data_avg_rev_wo_outliers, aes(x = average_rev)) +
   geom_histogram(
     binwidth = 25,
-    boundry = 25,
+    boundary = 25,
     color = border_color,
     fill = fill_color,
     alpha = alpha_lvl,
@@ -202,4 +204,103 @@ boxpl_avg_rev <- ggplot(data_avg_rev, aes(x = average_rev)) +
   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
 
 ggarrange(hist_avg_rev, boxpl_avg_rev, heights = 2:1, top = "Distribution of municipalities by revenue")
+```
+
+
+Tangible assets
+```{r}
+data_per_capita$tangible_assets_k <- data_per_capita$tangible_assets/1e3
+q_assets <- quantile(data_per_capita$tangible_assets_k, probs = c(0.25, 0.75))
+iqr_assets <- IQR(data_per_capita$tangible_assets_k)
+
+low_assets <- q_assets[1]-1.5*iqr_assets
+up_assests <- q_assets[2]+1.5*iqr_assets
+
+data_assets_pc <- data_per_capita %>% filter(tangible_assets_k < up_assests)
+```
+
+```{r}
+assets_hist <- ggplot(data_assets_pc, aes(x = tangible_assets_k)) +
+  geom_histogram(
+    #binwidth = 25,
+    #boundry = 25,
+    color = border_color,
+    fill = fill_color,
+    alpha = alpha_lvl,
+    aes(y = after_stat(count / sum(count)))
+  ) +
+  xlab("Per capita tangible assests in thousands CZK") +
+  ylab("Relative frequency") +
+  coord_cartesian(xlim = c(0, up_assests * 1.1)) +
+  scale_x_continuous(n.breaks = 10) +
+  theme_light()
+
+assets_boxplot <- ggplot(data_per_capita, aes(x = tangible_assets_k)) +
+  geom_boxplot(outlier.shape = NA, fill=fill_color, alpha=alpha_lvl) +
+  coord_cartesian(xlim = c(0, up_assests * 1.1)) +
+  scale_x_continuous(n.breaks = 10) +
+  xlab("Per capita tangible assests in thousands CZK") +
+  theme_light() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
+
+tangible_assets <- ggarrange(assets_hist, assets_boxplot, heights = 2:1, top = "Distribution of tangible assests per capita")
+
+ggsave("tangible_assets_per_capita.png", tangible_assets)
+```
+
+Elections data 
+
+```{r}
+elections_data <- read.csv("../elections/election_with_coalition.csv")
+elections_data <- elections_data %>% mutate(is_overall_winner=recode(is_overall_winner, '1'='YES', '0'='NO'), is_winner_in_coalition=recode(is_winner_in_coalition, '1'='YES', '0'='NO'), is_coalition_won=recode(is_coalition_won, '1'='YES', '0'='NO')) %>% mutate(year=as.factor(year))
+
+elections_data$is_coalition_won <- factor(elections_data$is_coalition_won, levels=c("YES", "NO"))
+elections_data$is_overall_winner <- factor(elections_data$is_overall_winner, levels=c("YES", "NO"))
+elections_data$is_winner_in_coalition <- factor(elections_data$is_winner_in_coalition, levels=c("YES", "NO"))
+```
+
+```{r}
+ggplot(elections_data, aes(x=year, fill=is_coalition_won)) +
+  geom_bar(position='dodge')+
+  scale_fill_manual(
+    values=c("YES"=cat_pallet_colors[1], "NO"=cat_pallet_colors[2]),
+    name = "Has coalition won"
+  ) +
+  xlab("Year") +
+  ylab("Number of municipalities") +
+  ggtitle("Number of municipalities where colation reccieved majority of votes") +
+  theme_light()
+
+ggsave("coalition_won.png")
+```
+
+```{r}
+ggplot(elections_data, aes(x=year, fill=is_overall_winner)) +
+  geom_bar(position='dodge')+
+  scale_fill_manual(
+    values=c("YES"=cat_pallet_colors[1], "NO"=cat_pallet_colors[2]),
+    name = "Has election leader won"
+  ) +
+  xlab("Year") +
+  ylab("Number of municipalities") +
+  ggtitle("Number of municipalities where election leader won") +
+  theme_light()
+
+ggsave("overall_winner_won.png")
+```
+
+
+```{r}
+ggplot(elections_data, aes(x=year, fill=is_winner_in_coalition)) +
+  geom_bar(position='dodge') +
+  scale_fill_manual(
+    values=c("YES"=cat_pallet_colors[1], "NO"=cat_pallet_colors[2]),
+    name = "Is winner in coalition"
+  ) +
+  xlab("Year") +
+  ylab("Number of municipalities") +
+  ggtitle("Number of municipalities where winner is in coalition") +
+  theme_light()
+
+ggsave("is_winner_in_coaltion.png")
 ```
