@@ -1,0 +1,21 @@
+---
+title: "elections_extended_merged"
+output: html_document
+date: "2023-01-01"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+```
+
+```{r}
+elections <- read.csv("../elections/extended_elections.csv")
+data <- read.csv("data_per_capita.csv")
+```
+
+
+```{r}
+data_with_elections <- left_join(data, elections, by=c("year", "municipality_id")) %>% select(-c(municipality_name, X))
+write.csv(data_with_elections, "data_with_elections.csv")
+```
